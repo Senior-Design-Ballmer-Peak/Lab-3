@@ -236,3 +236,54 @@ header {
 .dropdown:hover .dropbtn {
   background-color: #0624cd; /* No change in color on hover */
 }
+
+.our-work {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  text-align: center; /* Center text */
+}
+
+.our-work h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center; /* Center text */
+}
+
+.lab {
+  margin-bottom: 20px;
+  text-align: center; /* Center text */
+}
+
+.lab h3 {
+  font-size: 1.5em;
+  text-align: center; /* Center text */
+}
+
+.lab p {
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: center; /* Center text */
+}
+
+.view-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1f31b9;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.view-more:hover {
+  background-color: #1f31b9;
+}
+
+.lab img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center; /* Center text */
+}
