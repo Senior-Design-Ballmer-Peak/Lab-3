@@ -114,3 +114,38 @@ h1 {
     color: #ecf0f1;
   }
   
+  .undergraduate-research, .fishing-hobby, .space-force, .volleyall{
+    padding: 40px 20px;
+    background-color: #ecf0f1;
+    text-align: center;
+  }
+  
+  .feature-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .space-force-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .space-force-image {
+    width: 20%;
+    border-radius: 10px;
+  }
+
+  .volleyball {
+    text-align: center;
+  }
+  
+  
+  .small-image {
+    width: 30%; /* or any other size you prefer */
+    margin: 0 auto; /* to center the image */
+    display: block; /* add this line */
+  }
+  
