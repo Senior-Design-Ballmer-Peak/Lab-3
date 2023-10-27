@@ -8,10 +8,6 @@ Welcome to the Lab-3 project repository! This project is focused on creating a U
 ## Table of Contents
 1. [Features](#features)
 2. [Technologies Used](#technologies-used)
-3. [Getting Started](#getting-started)
-4. [Usage](#usage)
-5. [Contribution](#contribution)
-6. [License](#license)
 
 ## Features
 - **Team Profiles**: Introduces the team members with their profile pictures and links to their personal portfolios.
