@@ -114,9 +114,26 @@
       <p>Phone: (310) 779-8746</p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/charles-wilmot/" target="_blank">Charles Wilmot</a></p>
     </section>
+
+    <!-- Comment Section -->
+    <section class="comments" id="comments">
+      <h2>Comments</h2>
+      <ul id="commentList">
+        <!-- Comments will be appended here -->
+      </ul>
+      <div class="comment-form">
+        <h3>Leave a comment:</h3>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+        <button onclick="submitComment()">Submit</button>
+      </div>
+    </section>
   </main>
   <footer>
     <p>© 2023 Ballmer Peak Portfolio</p>
   </footer>
+  <script src="../js/comment.js"></script>
 </body>
 </html>
