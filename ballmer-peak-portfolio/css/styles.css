@@ -82,3 +82,45 @@ footer {
   background-color: #333;
   color: #fff;
 }
+
+.header-container {
+  position: relative;
+  text-align: center;
+  background-image: url('../images/mountain.png'); /* Adjust path as necessary */
+  background-size: cover;
+  background-position: center;
+  padding: 1em 0;
+  height: 200px; /* Adjust height as necessary */
+}
+
+.header-container h1 {
+  display: inline-block;
+  padding: 10px;
+  color: #fff; /* Ensure text is white or a color that contrasts well with the mountain image */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: add text shadow for better readability */  display: inline-block;
+  padding: 10px;
+}
+
+.team-member {
+  display: inline-block;
+  border-radius: 50%; /* This makes the link circular */
+  overflow: hidden; /* This is to make sure the image doesn’t overflow the circular border */
+  width: 100px; /* Adjust as necessary */
+  height: 100px; /* Adjust as necessary */
+  text-align: center;
+  position: relative;
+}
+
+.team-member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This makes the image cover the entire area of the link */
+}
+
+.team-member span {
+  display: block;
+  position: absolute;
+  bottom: -30px; /* Adjust as necessary */
+  width: 100%;
+  text-align: center;
+}
