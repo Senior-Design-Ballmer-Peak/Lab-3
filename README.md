@@ -3,7 +3,7 @@
 ## Description
 Welcome to the Lab-3 project repository! This project is focused on creating a UX/UI portfolio website showcasing the works and profiles of our team members. The portfolio includes a user-friendly interface, easy navigation, and visual elements that highlight our skills and projects.
 
-![screenshot](path-to-your-screenshot.png)
+![placeholder for screenshot](path-to-your-screenshot.png)
 
 ## Table of Contents
 1. [Features](#features)
