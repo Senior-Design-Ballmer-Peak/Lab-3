@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:44427",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "/Users/charleswilmot/Documents/GitHub/Lab-3/Lab-3/ballmer-peark-portfolio-angular/ClientApp/",
+"MaxTimeoutInSeconds": "120"
+}
+}
