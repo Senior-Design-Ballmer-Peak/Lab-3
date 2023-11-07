@@ -19,7 +19,7 @@
           "options": {
             "progress": false,
             "outputPath": "dist",
-            "index": "src/index.html",
+            "index": "ballmer-peark-portfolio-angular/ClientApp/src/index.html",
             "main": "ballmer-peark-portfolio-angular/ClientApp/src/main.ts",
             "polyfills": "ballmer-peark-portfolio-angular/ClientApp/src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
