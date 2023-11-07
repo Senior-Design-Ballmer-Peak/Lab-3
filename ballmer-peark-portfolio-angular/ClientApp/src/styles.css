@@ -117,7 +117,7 @@ footer {
 .header-container {
   position: relative;
   text-align: center;
-  background-image: url('../images/mountain.png'); /* Adjust path as necessary */
+  /* background-image: url('../images/mountain.png');*/ /* Adjust path as necessary */
   background-size: cover;
   background-position: center;
   padding: 1em 0;
