@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "xKwvuIU1x7AbtozmRUvPuDfdLzZ/pS8sT00mvpKgyu0=",
+  "Source": "ballmer-portfolio",
+  "BasePath": "_content/ballmer-portfolio",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ballmer-portfolio\\wwwroot",
+      "Source": "ballmer-portfolio",
+      "ContentRoot": "C:\\Users\\trist\\Desktop\\code\\Senior_design\\Lab3\\Lab-3\\ballmer-peark-portfolio-angular\\ballmer-portfolio\\wwwroot\\",
+      "BasePath": "_content/ballmer-portfolio",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\trist\\Desktop\\code\\Senior_design\\Lab3\\Lab-3\\ballmer-peark-portfolio-angular\\ballmer-portfolio\\wwwroot\\favicon.ico",
+      "SourceId": "ballmer-portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\trist\\Desktop\\code\\Senior_design\\Lab3\\Lab-3\\ballmer-peark-portfolio-angular\\ballmer-portfolio\\wwwroot\\",
+      "BasePath": "_content/ballmer-portfolio",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    }
+  ]
+}

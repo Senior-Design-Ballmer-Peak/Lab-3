@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ko7qK0alrdjkBVaebnfO46QUYxDX3vT+quu4CbCkI73VwUtc2FpS/GRklptThavLZqIHAY6krTjLA/0gMF0Pnw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\trist\\Desktop\\code\\Senior_design\\Lab3\\Lab-3\\ballmer-peark-portfolio-angular\\ballmer-portfolio\\ballmer-portfolio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\trist\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\7.0.13\\microsoft.aspnetcore.spaproxy.7.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

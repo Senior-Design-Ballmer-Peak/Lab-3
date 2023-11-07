@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\trist\\Desktop\\code\\Senior_design\\Lab3\\Lab-3\\ballmer-peark-portfolio-angular\\ballmer-portfolio\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ballmer-portfolio.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.ballmer-portfolio.props",
+      "PackagePath": "build\\ballmer-portfolio.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.ballmer-portfolio.props",
+      "PackagePath": "buildMultiTargeting\\ballmer-portfolio.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.ballmer-portfolio.props",
+      "PackagePath": "buildTransitive\\ballmer-portfolio.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
