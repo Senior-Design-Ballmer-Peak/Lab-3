@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1dPLE9tdLC9Y5Z55YMHHGSYelrdIHK6wZEmp6yIKJatvBpwmSG9kbXUHfjstU1hI6e2y7SeZ+aoJ0o7FE0zgUA==",
+  "dgSpecHash": "vkPclm/PyRaT2lIMpPR1QvBayCyV+qx05aH9Mp8SmPrzqcuZFJ3lswqMwt/Ph3qL1aS0ODETm7qDygKja0jJ9w==",
   "success": true,
-  "projectFilePath": "/Users/charleswilmot/Documents/GitHub/Lab-3/Lab-3/ballmer-peark-portfolio-angular/ballmer-portfolio/ballmer-portfolio.csproj",
+  "projectFilePath": "/Users/charleswilmot/Documents/GitHub/Lab-3/Lab-3/ballmer-peark-portfolio-angular/ballmer-portfolio.csproj",
   "expectedPackageFiles": [
     "/Users/charleswilmot/.nuget/packages/microsoft.aspnetcore.spaproxy/7.0.13/microsoft.aspnetcore.spaproxy.7.0.13.nupkg.sha512"
   ],

@@ -9,17 +9,17 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ballmer_portfolio
 build_property.RootNamespace = ballmer_portfolio
-build_property.ProjectDir = /Users/charleswilmot/Documents/GitHub/Lab-3/Lab-3/ballmer-peark-portfolio-angular/ballmer-portfolio/
+build_property.ProjectDir = /Users/charleswilmot/Documents/GitHub/Lab-3/Lab-3/ballmer-peark-portfolio-angular/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/charleswilmot/Documents/GitHub/Lab-3/Lab-3/ballmer-peark-portfolio-angular/ballmer-portfolio
+build_property.MSBuildProjectDirectory = /Users/charleswilmot/Documents/GitHub/Lab-3/Lab-3/ballmer-peark-portfolio-angular
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/charleswilmot/Documents/GitHub/Lab-3/Lab-3/ballmer-peark-portfolio-angular/ballmer-portfolio/Pages/Error.cshtml]
+[/Users/charleswilmot/Documents/GitHub/Lab-3/Lab-3/ballmer-peark-portfolio-angular/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/charleswilmot/Documents/GitHub/Lab-3/Lab-3/ballmer-peark-portfolio-angular/ballmer-portfolio/Pages/_ViewImports.cshtml]
+[/Users/charleswilmot/Documents/GitHub/Lab-3/Lab-3/ballmer-peark-portfolio-angular/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
