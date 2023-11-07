@@ -1,20 +1,36 @@
 ﻿<Properties StartupConfiguration="{05594AA6-0B13-40EC-B919-95AE8B125C4D}|Default">
-  <MonoDevelop.Ide.ItemProperties.ballmer-portfolio PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ballmer-portfolio PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClientApp/.gitignore">
+    <Files>
+      <File FileName="ClientApp/.gitignore" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ballmer-portfolio">
-            <Node name="ballmer-portfolio" selected="True" />
+            <Node name="ballmer-portfolio">
+              <Node name="ballmer-portfolio" expanded="True">
+                <Node name="Controllers" expanded="True" />
+                <Node name="obj" expanded="True" />
+                <Node name="Properties" expanded="True" />
+                <Node name="appsettings.json" expanded="True" />
+              </Node>
+              <Node name="ClientApp" expanded="True">
+                <Node name=".angular" expanded="True" />
+                <Node name="src" expanded="True" />
+                <Node name=".gitignore" selected="True" />
+                <Node name="tsconfig.json" expanded="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
