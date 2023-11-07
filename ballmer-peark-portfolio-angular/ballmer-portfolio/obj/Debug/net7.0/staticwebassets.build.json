@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xKwvuIU1x7AbtozmRUvPuDfdLzZ/pS8sT00mvpKgyu0=",
+  "Hash": "PK0ScyJLWZ+xsJ2b0QhmMlBUN3jjnK0qQQwFpAV3Hcc=",
   "Source": "ballmer-portfolio",
   "BasePath": "_content/ballmer-portfolio",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "ballmer-portfolio\\wwwroot",
+      "Name": "ballmer-portfolio/wwwroot",
       "Source": "ballmer-portfolio",
-      "ContentRoot": "C:\\Users\\trist\\Desktop\\code\\Senior_design\\Lab3\\Lab-3\\ballmer-peark-portfolio-angular\\ballmer-portfolio\\wwwroot\\",
+      "ContentRoot": "/Users/charleswilmot/Documents/GitHub/Lab-3/Lab-3/ballmer-peark-portfolio-angular/ballmer-portfolio/wwwroot/",
       "BasePath": "_content/ballmer-portfolio",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\trist\\Desktop\\code\\Senior_design\\Lab3\\Lab-3\\ballmer-peark-portfolio-angular\\ballmer-portfolio\\wwwroot\\favicon.ico",
+      "Identity": "/Users/charleswilmot/Documents/GitHub/Lab-3/Lab-3/ballmer-peark-portfolio-angular/ballmer-portfolio/wwwroot/favicon.ico",
       "SourceId": "ballmer-portfolio",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\trist\\Desktop\\code\\Senior_design\\Lab3\\Lab-3\\ballmer-peark-portfolio-angular\\ballmer-portfolio\\wwwroot\\",
+      "ContentRoot": "/Users/charleswilmot/Documents/GitHub/Lab-3/Lab-3/ballmer-peark-portfolio-angular/ballmer-portfolio/wwwroot/",
       "BasePath": "_content/ballmer-portfolio",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -31,7 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
+      "OriginalItemSpec": "wwwroot/favicon.ico"
     }
   ]
 }
