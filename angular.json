@@ -20,8 +20,8 @@
             "progress": false,
             "outputPath": "dist",
             "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "main": "ballmer-peark-portfolio-angular/ClientApp/src/main.ts",
+            "polyfills": "ballmer-peark-portfolio-angular/ClientApp/src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "allowedCommonJsDependencies": [
               "oidc-client"
@@ -31,7 +31,7 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "ballmer-peark-portfolio-angular/ClientApp/src/styles.css"
             ],
             "scripts": []
           },
