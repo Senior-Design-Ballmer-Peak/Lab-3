@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= "Trey's Portfolio - Ballmer Peak Portfolio" %></title>
-  <%= stylesheet_link_tag 'treyStyles', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <title><%= "FILL IN's Portfolio - Ballmer Peak Portfolio" %></title>
+  <%= stylesheet_link_tag '{FILL IN}Styles', media: 'all', 'data-turbolinks-track': 'reload' %>
 </head>
 <body>
-<header style="background-image: url('<%= asset_path("treysImages/rockies.jpeg") %>'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-  <h1>Trey's Portfolio</h1>
+<header>
+  <h1>FILL IN's Portfolio</h1>
   <nav>
     <ul>
       <li><%= link_to 'Home', root_path %></li>
@@ -24,59 +24,11 @@
     <p> INTRODUCTION </p>
   </section>
 
-
-  <section class="iowa">
-    <p><%= image_tag 'treysImages/young-hawkeye.jpeg', alt: 'Young Trey at Iowa basketball game', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/hurkey.jpeg', alt: 'Trey next to Hurkey', class: 'feature-image' %></p>
-    <h2>University of Iowa</h2>
-    <p> Computer Science and Engineering Major </p>
-    <p> Expected graduation: May 2024 </p>
-  </section>
-
-  <section class="udemy">
-    <h2>Online Classes</h2>
-    <p> iOS & Swift - The Complete iOS App Development Bootcamp </p>
-    <p> SwiftUI + SwiftData Masterclass - iOS App Development Swift </p>
-    <p> The Complete 2023 Web Development Bootcamp </p>
-    <p> Machine Learning A-Z: AI, Python & R + ChatGPT </p>
-    <p> Complete 2022 Data Science & Machine Learning Bootcamp </p>
-    <p> 100 Days of Code: The Complete Python Pro Bootcamp </p>
-    <p> Backend MasterClass [Golang + Postgres + Kubernetes + gRPC]</p>
-  </section>
-
-  <section class="internship">
-    <h2>iOS Artificial Intelligence App Development Intern</h2>
-    <p> MoodMe Tech </p>
-    <p> - Swift / Objective C / XCode </p>
-    <p> - Demo App for showcasing company’s AI product </p>
-    <p> - Face Tracking / Emotion Detection AI </p>
-  </section>
-
-  <section class="surplus">
-    <h2>Laptop/PC technician</h2>
-    <p> University of Iowa Surplus </p>
-    <p> - Hardware Problem Solving / Hard Drive and SSD Wiping </p>
-    <p> - Disassemble / Fix / Reassemble </p>
-    <p> - Laptops / Tower PC / Projectors / All-In-One Systems </p>
-  </section>
-
-  <section class="projects">
-    <h2>My Projects</h2>
-    <div class="project">
-      <h3>CookSmart</h3>
-      <p><%= image_tag 'treysImages/CookSmart.png', alt: 'iPhone App Icon', class: 'feature-image' %></p>
-      <p> Mobile iOS Cookbook, Meal Prepping, Grocery List App </p>
-      <p> Swift / XCode / Firebase (Authentication and Firestore) </p>
-      <p> Next Features: updating UI, notifications, Apple watch integration </p>
-    </div>
-    <div class="project">
-      <h3>Optimizing Model Selection in Low Variability Datasets with Imbalanced Dependent Variables</h3>
-      <p>Using different ML models to predict results with low variability datasets</p>
-    </div>
-    <div class="project">
-      <h3>Embedded Systems Project</h3>
-      <p>Remote Controlled Crane</p>
-    </div>
+  <!--  Section template-->
+  <section class="SECTION">
+    <h2>SECTION</h2>
+<!--    #<%#= image_tag 'charliesImages/bannerPhoto.jpeg', alt: 'Charlie in the Downtown Banner Campaign', class: 'feature-image small-image' %>-->
+    <p> Section Description </p>
   </section>
 
   <section class="skills-carousel">
@@ -84,80 +36,18 @@
     <div class="carousel">
       <div class="carousel-container">
         <div class="carousel-slide">
-          <%= image_tag 'icons/swift.png', alt: 'Swift' %>
-          <%= image_tag 'icons/objective-c.png', alt: 'Objective C' %>
-          <%= image_tag 'icons/cpp.png', alt: 'C++' %>
-          <%= image_tag 'icons/c.png', alt: 'C' %>
           <%= image_tag 'icons/java.png', alt: 'Java' %>
-          <%= image_tag 'icons/python.png', alt: 'Python' %>
-          <%= image_tag 'icons/pandas.png', alt: 'Pandas' %>
-          <%= image_tag 'icons/numpy.png', alt: 'NumPy' %>
-          <%= image_tag 'icons/scikit-learn.png', alt: 'SciKit Learn' %>
-          <%= image_tag 'icons/seaborn.png', alt: 'Seaborn' %>
-          <%= image_tag 'icons/tensorflow.png', alt: 'tensorflow' %>
-          <%= image_tag 'icons/ruby.png', alt: 'Ruby' %>
-          <%= image_tag 'icons/ruby-on-rails.png', alt: 'Ruby on Rails' %>
-          <%= image_tag 'icons/html.png', alt: 'HTML' %>
-          <%= image_tag 'icons/css.png', alt: 'CSS' %>
-          <%= image_tag 'icons/haskell.png', alt: 'Haskell' %>
-          <%= image_tag 'icons/assembly.png', alt: 'Assembly' %>
-          <%= image_tag 'icons/matlab.png', alt: 'MatLab' %>
-          <%= image_tag 'icons/firebase.png', alt: 'Firebase' %>
-          <%= image_tag 'icons/mongodb.png', alt: 'MongoDB' %>
-          <%= image_tag 'icons/postgres.png', alt: 'Postgres' %>
-          <%= image_tag 'icons/neo4j.png', alt: 'Neo4J' %>
-          <%= image_tag 'icons/redis.png', alt: 'Redis' %>
-          <%= image_tag 'icons/bash.png', alt: 'Bash' %>
-          <%= image_tag 'icons/apple.png', alt: 'Apple' %>
-          <%= image_tag 'icons/ubuntu.png', alt: 'Ubuntu' %>
-          <%= image_tag 'icons/xcode.png', alt: 'XCode' %>
-          <%= image_tag 'icons/jetbrains.png', alt: 'Jetbrains' %>
-          <%= image_tag 'icons/vscode.png', alt: 'VS Code' %>
-          <%= image_tag 'icons/git.png', alt: 'Git' %>
-          <%= image_tag 'icons/arduino.png', alt: 'Arduino' %>
-          <%= image_tag 'icons/aws.png', alt: 'AWS' %>
-          <%= image_tag 'icons/jira.png', alt: 'Jira' %>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="basketball">
-    <p><%= image_tag 'treysImages/basketball.jpeg', alt: 'Trey playing basketball in high school', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/bulls.jpeg', alt: 'Bulls Game', class: 'feature-image' %></p>
-    <h2>Basketball</h2>
-    <p> Section Description </p>
-  </section>
-
-  <section class="outdoor">
-    <h2>Outdoors</h2>
-    <p><%= image_tag 'treysImages/black-elk-peak.jpeg', alt: 'Photo from atop Black Elk Peak in South Dakota', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/camelback.jpeg', alt: 'Looking down on the hike up camelback in Phoenix, Arizona', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/devils-lake.jpeg', alt: 'A nice view of Devil\'s Lake state park in Wisconsin', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/mount-garfield.jpeg', alt: 'The view from Trey\'s favorite hike, up Mount Garfield in Grand Junction, Colorado', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/starved-rock.jpeg', alt: 'One of the canyons that live in Starved Rock State Park, Illinois', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/rockies.jpeg', alt: 'A beautiful view of the Rocky Mountain Range in Colorado', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/disc-golf.jpeg', alt: 'A photo at Brookwood Disc Golf Course in Waverly, Iowa', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/ace.jpeg', alt: 'A photo of Trey\'s first ace, during a glow round at his home course', class: 'feature-image' %></p>
-    <p> Section Description </p>
-  </section>
-
-  <section class="3d-printing">
-    <h2>3D Printing</h2>
-    <p> Section Description </p>
-  </section>
-
-  <section class="keyboards">
-    <h2>Custom Keyboards</h2>
-    <p> Section Description </p>
-  </section>
-
   <section class="contact">
     <h2>Contact Me</h2>
     <p>Feel free to reach out to me for any inquiries or collaborations. I'm always open to discuss new opportunities and projects!</p>
-    <p>Email: <a href="mailto:treyeck2@gmail.com">treyeck2@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/trey-eckenrod" target="_blank">trey-eckenrod</a></p>
-    <p>GitHub: <a href="https://github.com/teckenrod" target="_blank">teckenrod</a></p>
+    <p>Email: <a href="mailto:FILL_IN@gmail.com">FILL_IN@gmail.com</a></p>
+    <p>Phone: FILL IN</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/FILL IN" target="_blank">FILL IN</a></p>
   </section>
 
   <!-- Comment Section -->
