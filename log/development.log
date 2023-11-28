@@ -1643,3 +1643,57 @@ Completed 200 OK in 73ms (Views: 72.4ms | ActiveRecord: 0.0ms | Allocations: 424
   
 ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
   
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:25:48 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2734)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2826)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3705)
+
+
+  
+ActionView::Template::Error (The asset "styles.css" is not present in the asset pipeline.
+):
+     5:   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     6:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     7:   <title>Ballmer Peak Portfolio</title>
+     8:   <%= stylesheet_link_tag "styles", media: "all", "data-turbolinks-track": "reload" %>
+     9: </head>
+    10: <body>
+    11: <div class="top-bar">
+  
+app/views/home/index.html.erb:8
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:28:23 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2027)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2118)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2341)
+
+
+  
+ActionView::Template::Error (The asset "styles.css" is not present in the asset pipeline.
+):
+     5:   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     6:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     7:   <title>Ballmer Peak Portfolio</title>
+     8:   <%= stylesheet_link_tag "styles", media: "all", "data-turbolinks-track": "reload" %>
+     9: </head>
+    10: <body>
+    11: <div class="top-bar">
+  
+app/views/home/index.html.erb:8
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:28:55 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 65.6ms | Allocations: 32149)
+  Rendered layout layouts/application.html.erb (Duration: 110.7ms | Allocations: 45554)
+Completed 200 OK in 112ms (Views: 111.2ms | ActiveRecord: 0.0ms | Allocations: 45807)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
+  

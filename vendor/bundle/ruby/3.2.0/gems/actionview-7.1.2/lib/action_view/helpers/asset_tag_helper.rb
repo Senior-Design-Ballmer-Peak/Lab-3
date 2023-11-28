@@ -170,10 +170,10 @@ module ActionView
       # ==== Examples
       #
       #   stylesheet_link_tag "style"
-      #   # => <link href="/assets/style.css" rel="stylesheet" />
+      #   # => <link href="/assets/styles.css" rel="stylesheet" />
       #
-      #   stylesheet_link_tag "style.css"
-      #   # => <link href="/assets/style.css" rel="stylesheet" />
+      #   stylesheet_link_tag "styles.css"
+      #   # => <link href="/assets/styles.css" rel="stylesheet" />
       #
       #   stylesheet_link_tag "http://www.example.com/style.css"
       #   # => <link href="http://www.example.com/style.css" rel="stylesheet" />
@@ -182,10 +182,10 @@ module ActionView
       #   # => <link href="/stylesheets/style.less" rel="stylesheet/less">
       #
       #   stylesheet_link_tag "style", media: "all"
-      #   # => <link href="/assets/style.css" media="all" rel="stylesheet" />
+      #   # => <link href="/assets/styles.css" media="all" rel="stylesheet" />
       #
       #   stylesheet_link_tag "style", media: "print"
-      #   # => <link href="/assets/style.css" media="print" rel="stylesheet" />
+      #   # => <link href="/assets/styles.css" media="print" rel="stylesheet" />
       #
       #   stylesheet_link_tag "random.styles", "/css/stylish"
       #   # => <link href="/assets/random.styles" rel="stylesheet" />
