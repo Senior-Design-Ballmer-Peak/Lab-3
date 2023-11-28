@@ -1,2 +1,73 @@
-<h1>Miles#index</h1>
-<p>Find me in app/views/miles/index.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= "FILL IN's Portfolio - Ballmer Peak Portfolio" %></title>
+  <%= stylesheet_link_tag '{FILL IN}Styles', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<header>
+  <h1>FILL IN's Portfolio</h1>
+  <nav>
+    <ul>
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'Login', 'auth/login.html' %></li>
+      <li><%= link_to 'Sign Up', 'auth/register.html' %></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="introduction">
+    <h2>About Me</h2>
+    <p> INTRODUCTION </p>
+  </section>
+
+  <!--  Section template-->
+  <section class="SECTION">
+    <h2>SECTION</h2>
+    <!--    #<%#= image_tag 'charliesImages/bannerPhoto.jpeg', alt: 'Charlie in the Downtown Banner Campaign', class: 'feature-image small-image' %>-->
+    <p> Section Description </p>
+  </section>
+
+  <section class="skills-carousel">
+    <h2>Skills & Technologies</h2>
+    <div class="carousel">
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <%= image_tag 'icons/java.png', alt: 'Java' %>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to me for any inquiries or collaborations. I'm always open to discuss new opportunities and projects!</p>
+    <p>Email: <a href="mailto:FILL_IN@gmail.com">FILL_IN@gmail.com</a></p>
+    <p>Phone: FILL IN</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/FILL IN" target="_blank">FILL IN</a></p>
+  </section>
+
+  <!-- Comment Section -->
+  <section class="comments" id="comments">
+    <h2>Comments</h2>
+    <ul id="commentList">
+      <!-- Comments will be appended here -->
+    </ul>
+    <div class="comment-form">
+      <h3>Leave a comment:</h3>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="comment">Comment:</label><br>
+      <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+      <button onclick="submitComment()">Submit</button>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>© <%= Time.now.year %> Ballmer Peak Portfolio</p>
+</footer>
+</body>
+</html>
