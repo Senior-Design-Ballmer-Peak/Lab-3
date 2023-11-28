@@ -2085,3 +2085,192 @@ ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
   
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
   
+Started GET "/" for 127.0.0.1 at 2023-11-28 16:15:57 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1633)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 5271)
+Completed 200 OK in 28ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 9342)
+
+
+Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:15:57 -0600
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:15:57 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 16:16:07 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 437)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1028)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1280)
+
+
+Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:16:07 -0600
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:16:07 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 16:16:18 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1633)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 5268)
+Completed 200 OK in 21ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 9339)
+
+
+Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:16:18 -0600
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:16:18 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 16:17:06 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 437)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1037)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1289)
+
+
+Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:17:06 -0600
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:17:06 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 16:17:07 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 437)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1037)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1283)
+
+
+Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:17:07 -0600
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:17:07 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 16:17:08 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 437)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1031)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1281)
+
+
+Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:17:08 -0600
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:17:08 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 16:17:08 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 437)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1040)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1286)
+
+
+Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:17:08 -0600
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:17:08 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 16:17:09 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 437)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1022)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1270)
+
+
+Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:17:09 -0600
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:17:09 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 16:17:09 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 437)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1022)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1268)
+
+
+Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:17:09 -0600
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:17:09 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 16:17:18 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 437)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1028)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 1274)
+
+
+Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:17:18 -0600
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:17:18 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 16:18:15 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1269)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3579)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 4486)
+
+
+Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:18:15 -0600
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:18:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
