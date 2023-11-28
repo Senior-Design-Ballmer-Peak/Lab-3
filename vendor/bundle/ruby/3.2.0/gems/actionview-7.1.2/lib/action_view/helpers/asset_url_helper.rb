@@ -340,9 +340,9 @@ module ActionView
       # Full paths from the document root will be passed through.
       # Used internally by +stylesheet_link_tag+ to build the stylesheet path.
       #
-      #   stylesheet_path "style"                                  # => /assets/style.css
-      #   stylesheet_path "dir/style.css"                          # => /assets/dir/style.css
-      #   stylesheet_path "/dir/style.css"                         # => /dir/style.css
+      #   stylesheet_path "style"                                  # => /assets/styles.css
+      #   stylesheet_path "dir/styles.css"                          # => /assets/dir/styles.css
+      #   stylesheet_path "/dir/styles.css"                         # => /dir/styles.css
       #   stylesheet_path "http://www.example.com/css/style"       # => http://www.example.com/css/style
       #   stylesheet_path "http://www.example.com/css/style.css"   # => http://www.example.com/css/style.css
       def stylesheet_path(source, options = {})
@@ -355,7 +355,7 @@ module ActionView
       # Since +stylesheet_url+ is based on +asset_url+ method you can set +:host+ options. If +:host+
       # options is set, it overwrites global +config.action_controller.asset_host+ setting.
       #
-      #   stylesheet_url "css/style.css", host: "http://stage.example.com" # => http://stage.example.com/assets/css/style.css
+      #   stylesheet_url "css/styles.css", host: "http://stage.example.com" # => http://stage.example.com/assets/css/style.css
       #
       def stylesheet_url(source, options = {})
         url_to_asset(source, { type: :stylesheet }.merge!(options))

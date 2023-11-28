@@ -1,2 +1,123 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ballmer Peak Portfolio</title>
+  <%= stylesheet_link_tag "styles", media: "all", "data-turbolinks-track": "reload" %>
+</head>
+<body>
+<div class="top-bar">
+  <div class="dropdown">
+    <button class="dropbtn">Team Members</button>
+    <div class="dropdown-content">
+      <%= link_to "Charlie", "charlie/index.html" %>
+      <%= link_to "Trey", "trey/index.html" %>
+      <%= link_to "Tristan", "tristan/index.html" %>
+      <%= link_to "Miles", "miles/index.html" %>
+    </div>
+  </div>
+  <nav class="auth-nav">
+    <ul>
+      <li><a href="#comments">Comment</a></li>
+      <li><%= link_to "Sign Up", "auth/register.html" %></li>
+      <li><%= link_to "Login", "auth/login.html" %></li>
+    </ul>
+  </nav>
+</div>
+<header>
+  <div class="header-container">
+    <h1>Ballmer Peak Portfolio</h1>
+  </div>
+</header>
+<main>
+  <section class="intro">
+    <p>Welcome to the Ballmer Peak Portfolio! Get to know our amazing team members below:</p>
+  </section>
+  <section class="team-members">
+    <h2>Meet the Team</h2>
+    <ul>
+      <li>
+        <%= link_to charlie_index_path do %>
+          <div class="team-member">
+            <%= image_tag("charlie.jpeg", alt: "Charlie") %>
+            <span>Charlie</span>
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to trey_index_path do %>
+          <div class="team-member">
+            <%= image_tag("trey.jpeg", alt: "Trey") %>
+            <span>Trey</span>
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to tristan_index_path do %>
+          <div class="team-member">
+            <%= image_tag("tristan.jpeg", alt: "Tristan") %>
+            <span>Tristan</span>
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to miles_index_path do %>
+          <div class="team-member">
+            <%= image_tag("miles.jpeg", alt: "Miles") %>
+            <span>Miles</span>
+          </div>
+        <% end %>
+      </li>
+    </ul>
+  </section>
+
+  <section class="our-work">
+    <h2>Our Work</h2>
+
+    <div class="lab">
+      <%= image_tag("lab1.jpeg", alt: "Lab 1 Project") %>
+      <h3>Lab 1: Temperature Box</h3>
+      <p>A brief description of what Lab 1 was about and what technologies or concepts were covered.</p>
+      <%= link_to "View More", "https://github.com/Senior-Design-Ballmer-Peak/Lab-1", class: "view-more" %>
+    </div>
+
+    <div class="lab">
+      <%= image_tag("lab2.jpeg", alt: "Lab 2 Project") %>
+      <h3>Lab 2: Electric Eye</h3>
+      <p>A brief description of what Lab 2 was about and what technologies or concepts were covered.</p>
+      <%= link_to "View More", "https://github.com/Senior-Design-Ballmer-Peak/Lab-2", class: "view-more" %>
+    </div>
+
+    <div class="lab">
+      <%= image_tag("rocket.png", alt: "CAPSTONE") %>
+      <h3>Future Work - Rocket</h3>
+      <p>A brief description...</p>
+      <%= link_to "View More", "https://www.youtube.com/watch?v=vPF8EeFifvk", class: "view-more" %>
+    </div>
+  </section>
+
+
+
+  <!-- Comment Section -->
+  <section class="comments", id="comments">
+    <h2>Comments</h2>
+    <ul id="commentList">
+      <!-- Comments will be appended here -->
+    </ul>
+    <div class="comment-form">
+      <h3>Leave a comment:</h3>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="comment">Comment:</label><br>
+      <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+      <button onclick="submitComment()">Submit</button>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>© 2023 Ballmer Peak Portfolio</p>
+</footer>
+</body>
+</html>
