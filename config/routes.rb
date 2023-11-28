@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
-  get 'miles/index'
-  get 'trey/index'
-  get 'tristan/index'
-  get 'charlie/index'
+  # get 'miles/index'
+  # get 'trey/index'
+  # get 'tristan/index'
+  # get 'charlie/index'
   get 'home/index'
 
-  get '/miles/index', to: 'miles#index', as: 'miles_index'
+  get '/charlie/index', to: 'charlie#index', as: 'charlie_index'
   get '/trey/index', to: 'trey#index', as: 'trey_index'
   get '/tristan/index', to: 'tristan#index', as: 'tristan_index'
-  get '/charlie/index', to: 'charlie#index', as: 'charlie_index'
+  get '/miles/index', to: 'miles#index', as: 'miles_index'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

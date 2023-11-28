@@ -1452,3 +1452,194 @@ https://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
   
 config/routes.rb:8:in `block in <main>'
 config/routes.rb:1:in `<main>'
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:07:38 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:07:50 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2016)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 2120)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3912)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/charlie/index":String):
+    329:     <h2>Meet the Team</h2>
+    330:     <ul>
+    331:       <li>
+    332:         <%= link_to "Charlie", charlie_index_path do %>
+    333:           <%= image_tag("charlie.jpeg", alt: "Charlie") %>
+    334:           <span>Charlie</span>
+    335:         <% end %>
+  
+app/views/home/index.html.erb:332
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:09:18 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1842)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1934)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2818)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/charlie/index":String):
+    329:     <h2>Meet the Team</h2>
+    330:     <ul>
+    331:       <li>
+    332:         <%= link_to "Charlie", charlie_index_path do %>
+    333:           <%= image_tag("charlie.jpeg", alt: "Charlie") %>
+    334:           <span>Charlie</span>
+    335:         <% end %>
+  
+app/views/home/index.html.erb:332
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:09:19 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1053)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | Allocations: 1144)
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1372)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/charlie/index":String):
+    329:     <h2>Meet the Team</h2>
+    330:     <ul>
+    331:       <li>
+    332:         <%= link_to "Charlie", charlie_index_path do %>
+    333:           <%= image_tag("charlie.jpeg", alt: "Charlie") %>
+    334:           <span>Charlie</span>
+    335:         <% end %>
+  
+app/views/home/index.html.erb:332
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:13:03 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 102.3ms | Allocations: 32067)
+  Rendered layout layouts/application.html.erb (Duration: 130.7ms | Allocations: 45612)
+Completed 200 OK in 135ms (Views: 132.6ms | ActiveRecord: 0.0ms | Allocations: 46553)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:13:35 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2766)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 16144)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 17051)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:14:48 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2773)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 16144)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 17049)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:17:04 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2803)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 16180)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms | Allocations: 17083)
+
+
+Started GET "/home/images/lab1.jpg" for 127.0.0.1 at 2023-11-28 14:17:04 -0600
+Started GET "/home/images/lab2.jpeg" for 127.0.0.1 at 2023-11-28 14:17:04 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/lab1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/lab2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
+  
+Started GET "/home/images/rocket.png" for 127.0.0.1 at 2023-11-28 14:17:04 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/rocket.png"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:19:57 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 4731)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4823)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 5704)
+
+
+  
+ActionView::Template::Error (The asset "lab1.jpg" is not present in the asset pipeline.
+):
+    367:     <h2>Our Work</h2>
+    368: 
+    369:     <div class="lab">
+    370:       <%= image_tag("lab1.jpg", alt: "Lab 1 Project") %>
+    371:       <h3>Lab 1: Temperature Box</h3>
+    372:       <p>A brief description of what Lab 1 was about and what technologies or concepts were covered.</p>
+    373:       <%= link_to "View More", "https://github.com/Senior-Design-Ballmer-Peak/Lab-1", class: "view-more" %>
+  
+app/views/home/index.html.erb:370
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:20:15 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 4722)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4814)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 5693)
+
+
+  
+ActionView::Template::Error (The asset "lab1.jpeg" is not present in the asset pipeline.
+):
+    367:     <h2>Our Work</h2>
+    368: 
+    369:     <div class="lab">
+    370:       <%= image_tag("lab1.jpeg", alt: "Lab 1 Project") %>
+    371:       <h3>Lab 1: Temperature Box</h3>
+    372:       <p>A brief description of what Lab 1 was about and what technologies or concepts were covered.</p>
+    373:       <%= link_to "View More", "https://github.com/Senior-Design-Ballmer-Peak/Lab-1", class: "view-more" %>
+  
+app/views/home/index.html.erb:370
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:20:43 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 67.8ms | Allocations: 28164)
+  Rendered layout layouts/application.html.erb (Duration: 86.2ms | Allocations: 41549)
+Completed 200 OK in 89ms (Views: 87.7ms | ActiveRecord: 0.0ms | Allocations: 42450)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:21:21 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 49.9ms | Allocations: 28203)
+  Rendered layout layouts/application.html.erb (Duration: 70.6ms | Allocations: 41564)
+Completed 200 OK in 73ms (Views: 72.4ms | ActiveRecord: 0.0ms | Allocations: 42469)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
+  
