@@ -1189,3 +1189,266 @@ ActionController::RoutingError (No route matches [GET] "/home/images/charlie.jpe
   
 ActionController::RoutingError (No route matches [GET] "/home/images/tristan.jpeg"):
   
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:54:58 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 804)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 14247)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 15153)
+
+
+Started GET "/home/images/charlie.jpeg" for 127.0.0.1 at 2023-11-28 13:54:58 -0600
+Started GET "/home/images/trey.jpeg" for 127.0.0.1 at 2023-11-28 13:54:58 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/charlie.jpeg"):
+  
+Started GET "/home/images/miles.jpeg" for 127.0.0.1 at 2023-11-28 13:54:58 -0600
+Started GET "/home/images/tristan.jpeg" for 127.0.0.1 at 2023-11-28 13:54:58 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/trey.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/miles.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/tristan.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
+  
+Started GET "/home/trey/index.html" for 127.0.0.1 at 2023-11-28 13:55:25 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/trey/index.html"):
+  
+Started GET "/home/trey/images/charlie.jpeg" for 127.0.0.1 at 2023-11-28 13:55:25 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/trey/images/charlie.jpeg"):
+  
+Started GET "/home/trey/images/trey.jpeg" for 127.0.0.1 at 2023-11-28 13:55:25 -0600
+Started GET "/home/trey/images/tristan.jpeg" for 127.0.0.1 at 2023-11-28 13:55:25 -0600
+Started GET "/home/trey/images/miles.jpeg" for 127.0.0.1 at 2023-11-28 13:55:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/trey/images/trey.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/home/trey/images/tristan.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/home/trey/images/miles.jpeg"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:55:27 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 133)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2276)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2520)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:55:29 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 133)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2255)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2497)
+
+
+Started GET "/home/images/charlie.jpeg" for 127.0.0.1 at 2023-11-28 13:55:29 -0600
+Started GET "/home/images/trey.jpeg" for 127.0.0.1 at 2023-11-28 13:55:29 -0600
+Started GET "/home/images/miles.jpeg" for 127.0.0.1 at 2023-11-28 13:55:29 -0600
+Started GET "/home/images/tristan.jpeg" for 127.0.0.1 at 2023-11-28 13:55:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/trey.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/charlie.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/miles.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/tristan.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:58:16 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 810)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 14336)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 15241)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/charlie.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/trey.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/miles.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/tristan.jpeg"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:00:34 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1853)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1945)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2828)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/charlie/index":String):
+    329:     <h2>Meet the Team</h2>
+    330:     <ul>
+    331:       <li>
+    332:         <%= link_to "Charlie", charlie_index_path do %>
+    333:           <%= image_tag("charlie.jpeg", alt: "Charlie") %>
+    334:           <span>Charlie</span>
+    335:         <% end %>
+  
+app/views/home/index.html.erb:332
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:02:56 -0600
+  
+ArgumentError (Invalid route name, already in use: 'miles_index' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+https://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:8:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:03:14 -0600
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:6:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-11-28 14:03:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 14:03:18 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:03:21 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:03:27 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1840)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 1932)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2811)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/charlie/index":String):
+    329:     <h2>Meet the Team</h2>
+    330:     <ul>
+    331:       <li>
+    332:         <%= link_to "Charlie", charlie_index_path do %>
+    333:           <%= image_tag("charlie.jpeg", alt: "Charlie") %>
+    334:           <span>Charlie</span>
+    335:         <% end %>
+  
+app/views/home/index.html.erb:332
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:04:47 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1840)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1932)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2815)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/charlie/index":String):
+    329:     <h2>Meet the Team</h2>
+    330:     <ul>
+    331:       <li>
+    332:         <%= link_to "Charlie", charlie_index_path do %>
+    333:           <%= image_tag("charlie.jpeg", alt: "Charlie") %>
+    334:           <span>Charlie</span>
+    335:         <% end %>
+  
+app/views/home/index.html.erb:332
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:05:04 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1898)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1990)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2869)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/charlie/index":String):
+    329:     <h2>Meet the Team</h2>
+    330:     <ul>
+    331:       <li>
+    332:         <%= link_to "Charlie", charlie_index_path do %>
+    333:           <%= image_tag("charlie.jpeg", alt: "Charlie") %>
+    334:           <span>Charlie</span>
+    335:         <% end %>
+  
+app/views/home/index.html.erb:332
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:05:06 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1052)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1143)
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1366)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/charlie/index":String):
+    329:     <h2>Meet the Team</h2>
+    330:     <ul>
+    331:       <li>
+    332:         <%= link_to "Charlie", charlie_index_path do %>
+    333:           <%= image_tag("charlie.jpeg", alt: "Charlie") %>
+    334:           <span>Charlie</span>
+    335:         <% end %>
+  
+app/views/home/index.html.erb:332
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:05:19 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1842)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1934)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2817)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/charlie/index":String):
+    329:     <h2>Meet the Team</h2>
+    330:     <ul>
+    331:       <li>
+    332:         <%= link_to "Charlie", charlie_index_path do %>
+    333:           <%= image_tag("charlie.jpeg", alt: "Charlie") %>
+    334:           <span>Charlie</span>
+    335:         <% end %>
+  
+app/views/home/index.html.erb:332
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 14:05:36 -0600
+  
+ArgumentError (Invalid route name, already in use: 'miles_index' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+https://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:8:in `block in <main>'
+config/routes.rb:1:in `<main>'

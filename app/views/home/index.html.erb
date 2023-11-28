@@ -104,7 +104,7 @@
       .header-container {
           position: relative;
           text-align: center;
-          /*background-image: url('../images/mountain.png'); !* Adjust path as necessary *!*/
+          background-image: url('../../assets/images/mountain.png'); /* Adjust path as necessary */
           background-size: cover;
           background-position: center;
           padding: 1em 0;
@@ -329,24 +329,28 @@
     <h2>Meet the Team</h2>
     <ul>
       <li>
-        <%= link_to "Charlie", charlie_index_path %>
-          <img src="images/charlie.jpeg" alt="Charlie">
+        <%= link_to "Charlie", charlie_index_path do %>
+          <%= image_tag("charlie.jpeg", alt: "Charlie") %>
           <span>Charlie</span>
+        <% end %>
       </li>
       <li>
-        <%= link_to "Trey", trey_index_path %>
-          <img src="images/trey.jpeg" alt="Trey">
+        <%= link_to "Trey", trey_index_path do %>
+          <%= image_tag("trey.jpeg", alt: "Trey") %>
           <span>Trey</span>
+        <% end %>
       </li>
       <li>
-        <%= link_to "Tristan", tristan_index_path %>
-          <img src="images/tristan.jpeg" alt="Tristan">
+        <%= link_to "Tristan", tristan_index_path do %>
+          <%= image_tag("tristan.jpeg", alt: "Tristan") %>
           <span>Tristan</span>
+        <% end %>
       </li>
       <li>
-        <%= link_to "Miles", miles_index_path %>
-          <img src="images/miles.jpeg" alt="Miles">
+        <%= link_to "Miles", miles_index_path do %>
+          <%= image_tag("miles.jpeg", alt: "Miles") %>
           <span>Miles</span>
+        <% end %>
       </li>
     </ul>
   </section>
