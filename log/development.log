@@ -1,0 +1,1191 @@
+Started GET "/" for 127.0.0.1 at 2023-11-28 13:27:11 -0600
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.5ms | Allocations: 375)
+Completed 200 OK in 39ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 7878)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-28 13:34:08 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 375)
+Completed 200 OK in 12ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 4273)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-28 13:34:13 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 13)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started GET "/home" for 127.0.0.1 at 2023-11-28 13:34:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:34:20 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2782)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2874)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3764)
+
+
+  
+ActionView::Template::Error (The asset "styles.css" is not present in the asset pipeline.
+):
+     5:   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     6:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     7:   <title>Ballmer Peak Portfolio</title>
+     8:   <%= stylesheet_link_tag "styles", media: "all", "data-turbolinks-track": "reload" %>
+     9: </head>
+    10: <body>
+    11: <div class="top-bar">
+  
+app/views/home/index.html.erb:8
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:34:43 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1480)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1572)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2456)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "charlie/index.html":String):
+    38:     <h2>Meet the Team</h2>
+    39:     <ul>
+    40:       <li>
+    41:         <%= link_to "Charlie", "charlie/index.html", class: "team-member" do %>
+    42:           <img src="images/charlie.jpeg" alt="Charlie">
+    43:           <span>Charlie</span>
+    44:         <% end %>
+  
+app/views/home/index.html.erb:41
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:36:46 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 1033)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | Allocations: 1124)
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1347)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "charlie/index.html":String):
+    38:     <h2>Meet the Team</h2>
+    39:     <ul>
+    40:       <li>
+    41:         <%= link_to "Charlie", "charlie/index.html", class: "team-member" do %>
+    42:           <img src="images/charlie.jpeg" alt="Charlie">
+    43:           <span>Charlie</span>
+    44:         <% end %>
+  
+app/views/home/index.html.erb:41
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:37:15 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1460)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1552)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2437)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `charlie' for #<ActionView::Base:0x00000000012110>):
+    38:     <h2>Meet the Team</h2>
+    39:     <ul>
+    40:       <li>
+    41:         <%= link_to "Charlie", charlie/index.html.erb, class: "team-member" do %>
+    42:           <img src="images/charlie.jpeg" alt="Charlie">
+    43:           <span>Charlie</span>
+    44:         <% end %>
+  
+app/views/home/index.html.erb:41
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:37:40 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1529)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1621)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2500)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "../charlie/index.html":String):
+    38:     <h2>Meet the Team</h2>
+    39:     <ul>
+    40:       <li>
+    41:         <%= link_to "Charlie", "../charlie/index.html", class: "team-member" do %>
+    42:           <img src="images/charlie.jpeg" alt="Charlie">
+    43:           <span>Charlie</span>
+    44:         <% end %>
+  
+app/views/home/index.html.erb:41
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:38:22 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1469)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1561)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2440)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "charlie/index.html":String):
+    38:     <h2>Meet the Team</h2>
+    39:     <ul>
+    40:       <li>
+    41:         <%= link_to "Charlie", "charlie/index.html", class: "team-member" do %>
+    42:           <img src="images/charlie.jpeg" alt="Charlie">
+    43:           <span>Charlie</span>
+    44:         <% end %>
+  
+app/views/home/index.html.erb:41
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:39:45 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1464)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1556)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2438)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "charlie/index.html":String):
+    38:     <h2>Meet the Team</h2>
+    39:     <ul>
+    40:       <li>
+    41:         <%= link_to "Charlie", "charlie/index.html" do %>
+    42:           <img src="images/charlie.jpeg" alt="Charlie">
+    43:           <span>Charlie</span>
+    44:         <% end %>
+  
+app/views/home/index.html.erb:41
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:40:40 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2651)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2743)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3625)
+
+
+  
+ActionView::Template::Error (The asset "comment.js" is not present in the asset pipeline.
+):
+    70: <footer>
+    71:   <p>© 2023 Ballmer Peak Portfolio</p>
+    72: </footer>
+    73: <%= javascript_include_tag "comment", "data-turbolinks-track": "reload" %>
+    74: </body>
+    75: </html>
+  
+app/views/home/index.html.erb:73
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:41:03 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 502)
+  Rendered layout layouts/application.html.erb (Duration: 305.8ms | Allocations: 98294)
+Completed 200 OK in 309ms (Views: 308.4ms | ActiveRecord: 0.0ms | Allocations: 99198)
+
+
+Started GET "/home/charlie/index.html" for 127.0.0.1 at 2023-11-28 13:41:09 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/charlie/index.html"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:41:11 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2188)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 2430)
+
+
+Started GET "/home/trey/index.html" for 127.0.0.1 at 2023-11-28 13:41:12 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/trey/index.html"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:41:16 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2185)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 2427)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:42:34 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2472)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2564)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3443)
+
+
+  
+ActionView::Template::Error (The asset "styles.css" is not present in the asset pipeline.
+):
+     6:   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     7:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     8:   <title>Ballmer Peak Portfolio</title>
+     9:   <%= stylesheet_link_tag "styles", media: "all", "data-turbolinks-track": "reload" %>
+    10:   <style>
+    11:       body {
+    12:           font-family: 'Arial', sans-serif;
+  
+app/views/home/index.html.erb:9
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:43:21 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2547)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2639)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3523)
+
+
+  
+ActionView::Template::Error (The asset "styles.css" is not present in the asset pipeline.
+):
+     5:   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     6:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     7:   <title>Ballmer Peak Portfolio</title>
+     8:   <%= stylesheet_link_tag "styles", media: "all", "data-turbolinks-track": "reload" %>
+     9:   <style>
+    10:       body {
+    11:           font-family: 'Arial', sans-serif;
+  
+app/views/home/index.html.erb:8
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:43:31 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1998)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2089)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2312)
+
+
+  
+ActionView::Template::Error (The asset "styles.css" is not present in the asset pipeline.
+):
+     5:   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     6:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     7:   <title>Ballmer Peak Portfolio</title>
+     8:   <%= stylesheet_link_tag "styles", media: "all", "data-turbolinks-track": "reload" %>
+     9:   <style>
+    10:       body {
+    11:           font-family: 'Arial', sans-serif;
+  
+app/views/home/index.html.erb:8
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:43:47 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 613)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 14027)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 14933)
+
+
+Started GET "/home/auth/register.html" for 127.0.0.1 at 2023-11-28 13:43:52 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/auth/register.html"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:43:54 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2182)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 2426)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:44:07 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 13917)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 14822)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:45:54 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 784)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 14021)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 14926)
+
+
+Started GET "/images/mountain.png" for 127.0.0.1 at 2023-11-28 13:45:54 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.png"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:47:53 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1808)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1900)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2779)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/charlie/index":String):
+    329:     <h2>Meet the Team</h2>
+    330:     <ul>
+    331:       <li>
+    332:         <%= link_to "Charlie", charlie_index_path, class: "team-member" do %>
+    333:           <img src="images/charlie.jpeg" alt="Charlie">
+    334:           <span>Charlie</span>
+    335:         <% end %>
+  
+app/views/home/index.html.erb:332
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:48:41 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1628)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1728)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2642)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ballmer Peak Portfolio</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 0;
+          padding: 0;
+          background-color: #f5f5f5;
+      }
+
+      header {
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 1em 0;
+      }
+
+      header h1 {
+          margin: 0;
+          font-size: 2em;
+      }
+
+      nav ul {
+          padding: 0;
+          list-style: none;
+      }
+
+      nav li {
+          display: inline;
+          margin-right: 20px;
+      }
+
+      nav a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+      }
+
+      main {
+          padding: 20px;
+      }
+
+      .intro {
+          text-align: center;
+          margin-bottom: 40px;
+      }
+
+      .team-members h2 {
+          font-size: 1.8em;
+          text-align: center;
+          margin-bottom: 20px;
+      }
+
+      .team-members ul {
+          list-style: none;
+          padding: 0;
+          text-align: center;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+
+      .team-members li {
+          margin-bottom: 20px;
+          width: 45%;
+          margin-right: 5%;
+      }
+
+      .team-members li:nth-child(2n) {
+          margin-right: 0;
+      }
+
+
+      .team-member {
+          display: inline-block;
+          background-color: #030f83;
+          color: #fff;
+          text-decoration: none;
+          padding: 10px 20px;
+          font-weight: bold;
+          font-size: 1.2em;
+          border-radius: 5px;
+          transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .team-member:hover {
+          background-color: #555;
+          transform: translateY(-5px);
+      }
+
+      footer {
+          text-align: center;
+          padding: 1em 0;
+          background-color: #333;
+          color: #fff;
+      }
+
+      .header-container {
+          position: relative;
+          text-align: center;
+          background-image: url('../images/mountain.png'); /* Adjust path as necessary */
+          background-size: cover;
+          background-position: center;
+          padding: 1em 0;
+          height: 200px; /* Adjust height as necessary */
+      }
+
+      .header-container h1 {
+          display: inline-block;
+          padding: 10px;
+          color: #fff; /* Ensure text is white or a color that contrasts well with the mountain image */
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: add text shadow for better readability */  display: inline-block;
+          padding: 10px;
+      }
+
+      .team-member {
+          display: inline-block;
+          border-radius: 50%; /* This makes the link circular */
+          overflow: hidden; /* This is to make sure the image doesn’t overflow the circular border */
+          width: 100px; /* Adjust as necessary */
+          height: 100px; /* Adjust as necessary */
+          text-align: center;
+          position: relative;
+      }
+
+      .team-member {
+          display: inline-block;
+          border-radius: 50%;
+          overflow: hidden;
+          width: 250px; /* Adjusted from 100px to 150px */
+          height: 250px ; /* Adjusted from 100px to 150px */
+          text-align: center;
+          position: relative;
+      }
+
+
+      .team-member span {
+          display: block;
+          position: absolute;
+          bottom: 10px; /* Adjusted from -30px to 10px */
+          width: 100%;
+          text-align: center;
+          color: #fff; /* Changed text color to white for better contrast and visibility */
+          background-color: rgba(0, 0, 0, 0.5); /* Optional: added background to enhance readability */
+          padding: 5px 0; /* Added padding for better spacing */
+          font-size: 0.8em; /* Optional: adjust font size as necessary */
+      }
+
+      .team-member img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%; /* Ensure the image itself is also circular */
+      }
+
+      .top-bar {
+          background-color: #333; /* Or any color you prefer */
+          color: #fff;
+          padding: 0;
+          text-align: right;
+          height: 15px
+      }
+
+      .top-bar {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+          background-color: #333;
+      }
+
+      .auth-nav ul {
+          padding: 0;
+          list-style: none;
+          margin: 0;
+      }
+
+      .auth-nav li {
+          display: inline;
+          margin-left: 15px;
+      }
+
+      .auth-nav a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+      }
+
+      header {
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 1em 0;
+          margin-top: 0; /* Ensure there's no space between the top bar and the header */
+      }
+
+      .dropbtn {
+          background-color: #0624cd;
+          color: white;
+          padding: 10px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          text-align: center; /* Center text */
+          width: 100%; /* Take up full width of parent */
+      }
+
+      .dropdown {
+          position: relative;
+          display: inline-block;
+          width: 160px; /* Set a width */
+      }
+
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          text-align: center; /* Center text */
+      }
+
+      .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
+
+      .dropdown-content a:hover {
+          background-color: #f1f1f1;
+      }
+
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+          background-color: #0624cd; /* No change in color on hover */
+      }
+
+      .our-work {
+          margin: 20px;
+          padding: 20px;
+          background-color: #f4f4f4;
+          border-radius: 8px;
+          text-align: center; /* Center text */
+      }
+
+      .our-work h2 {
+          font-size: 2em;
+          margin-bottom: 20px;
+          text-align: center; /* Center text */
+      }
+
+      .lab {
+          margin-bottom: 20px;
+          text-align: center; /* Center text */
+      }
+
+      .lab h3 {
+          font-size: 1.5em;
+          text-align: center; /* Center text */
+      }
+
+      .lab p {
+          font-size: 1em;
+          line-height: 1.6;
+          text-align: center; /* Center text */
+      }
+
+      .view-more {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #1f31b9;
+          color: white;
+          text-decoration: none;
+          border-radius: 4px;
+      }
+
+      .view-more:hover {
+          background-color: #1f31b9;
+      }
+
+      .lab img {
+          max-width: 40%;
+          height: auto;
+          border-radius: 8px;
+          margin-bottom: 20px;
+          text-align: center; /* Center text */
+      }
+  </style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="dropdown">
+    <button class="dropbtn">Team Members</button>
+    <div class="dropdown-content">
+      <%= link_to "Charlie", "charlie/index.html" %>
+      <%= link_to "Trey", "trey/index.html" %>
+      <%= link_to "Tristan", "tristan/index.html" %>
+      <%= link_to "Miles", "miles/index.html" %>
+    </div>
+  </div>
+  <nav class="auth-nav">
+    <ul>
+      <li><a href="#comments">Comment</a></li>
+      <li><%= link_to "Sign Up", "auth/register.html" %></li>
+      <li><%= link_to "Login", "auth/login.html" %></li>
+    </ul>
+  </nav>
+</div>
+<header>
+  <div class="header-container">
+    <h1>Ballmer Peak Portfolio</h1>
+  </div>
+</header>
+<main>
+  <section class="intro">
+    <p>Welcome to the Ballmer Peak Portfolio! Get to know our amazing team members below:</p>
+  </section>
+  <section class="team-members">
+    <h2>Meet the Team</h2>
+    <ul>
+      <li>
+        <%= link_to "Charlie", charlie_index_path %>
+          <img src="images/charlie.jpeg" alt="Charlie">
+          <span>Charlie</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to "Trey", trey_index_path %>
+          <img src="images/trey.jpeg" alt="Trey">
+          <span>Trey</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to "Tristan", tristan_index_path %>
+          <img src="images/tristan.jpeg" alt="Tristan">
+          <span>Tristan</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to "Miles", miles_index_path %>
+          <img src="images/miles.jpeg" alt="Miles">
+          <span>Miles</span>
+        <% end %>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Rest of your HTML content remains unchanged -->
+
+</main>
+<footer>
+  <p>© 2023 Ballmer Peak Portfolio</p>
+</footer>
+</body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html lang="en">
+3:    <head>
+4:      <meta charset="UTF-8">
+5:      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+6:      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+7:      <title>Ballmer Peak Portfolio</title>
+8:      <style>
+9:          body {
+10:              font-family: Arial, sans-serif;
+11:              line-height: 1.6;
+12:              margin: 0;
+13:              padding: 0;
+14:              background-color: #f5f5f5;
+15:          }
+16:    
+17:          header {
+18:              background-color: #333;
+19:              color: #fff;
+20:              text-align: center;
+21:              padding: 1em 0;
+22:          }
+23:    
+24:          header h1 {
+25:              margin: 0;
+26:              font-size: 2em;
+27:          }
+28:    
+29:          nav ul {
+30:              padding: 0;
+31:              list-style: none;
+32:          }
+33:    
+34:          nav li {
+35:              display: inline;
+36:              margin-right: 20px;
+37:          }
+38:    
+39:          nav a {
+40:              text-decoration: none;
+41:              color: #fff;
+42:              font-weight: bold;
+43:          }
+44:    
+45:          main {
+46:              padding: 20px;
+47:          }
+48:    
+49:          .intro {
+50:              text-align: center;
+51:              margin-bottom: 40px;
+52:          }
+53:    
+54:          .team-members h2 {
+55:              font-size: 1.8em;
+56:              text-align: center;
+57:              margin-bottom: 20px;
+58:          }
+59:    
+60:          .team-members ul {
+61:              list-style: none;
+62:              padding: 0;
+63:              text-align: center;
+64:              display: flex;
+65:              flex-wrap: wrap;
+66:              justify-content: center;
+67:          }
+68:    
+69:          .team-members li {
+70:              margin-bottom: 20px;
+71:              width: 45%;
+72:              margin-right: 5%;
+73:          }
+74:    
+75:          .team-members li:nth-child(2n) {
+76:              margin-right: 0;
+77:          }
+78:    
+79:    
+80:          .team-member {
+81:              display: inline-block;
+82:              background-color: #030f83;
+83:              color: #fff;
+84:              text-decoration: none;
+85:              padding: 10px 20px;
+86:              font-weight: bold;
+87:              font-size: 1.2em;
+88:              border-radius: 5px;
+89:              transition: background-color 0.3s, transform 0.3s;
+90:          }
+91:    
+92:          .team-member:hover {
+93:              background-color: #555;
+94:              transform: translateY(-5px);
+95:          }
+96:    
+97:          footer {
+98:              text-align: center;
+99:              padding: 1em 0;
+100:              background-color: #333;
+101:              color: #fff;
+102:          }
+103:    
+104:          .header-container {
+105:              position: relative;
+106:              text-align: center;
+107:              background-image: url('../images/mountain.png'); /* Adjust path as necessary */
+108:              background-size: cover;
+109:              background-position: center;
+110:              padding: 1em 0;
+111:              height: 200px; /* Adjust height as necessary */
+112:          }
+113:    
+114:          .header-container h1 {
+115:              display: inline-block;
+116:              padding: 10px;
+117:              color: #fff; /* Ensure text is white or a color that contrasts well with the mountain image */
+118:              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: add text shadow for better readability */  display: inline-block;
+119:              padding: 10px;
+120:          }
+121:    
+122:          .team-member {
+123:              display: inline-block;
+124:              border-radius: 50%; /* This makes the link circular */
+125:              overflow: hidden; /* This is to make sure the image doesn’t overflow the circular border */
+126:              width: 100px; /* Adjust as necessary */
+127:              height: 100px; /* Adjust as necessary */
+128:              text-align: center;
+129:              position: relative;
+130:          }
+131:    
+132:          .team-member {
+133:              display: inline-block;
+134:              border-radius: 50%;
+135:              overflow: hidden;
+136:              width: 250px; /* Adjusted from 100px to 150px */
+137:              height: 250px ; /* Adjusted from 100px to 150px */
+138:              text-align: center;
+139:              position: relative;
+140:          }
+141:    
+142:    
+143:          .team-member span {
+144:              display: block;
+145:              position: absolute;
+146:              bottom: 10px; /* Adjusted from -30px to 10px */
+147:              width: 100%;
+148:              text-align: center;
+149:              color: #fff; /* Changed text color to white for better contrast and visibility */
+150:              background-color: rgba(0, 0, 0, 0.5); /* Optional: added background to enhance readability */
+151:              padding: 5px 0; /* Added padding for better spacing */
+152:              font-size: 0.8em; /* Optional: adjust font size as necessary */
+153:          }
+154:    
+155:          .team-member img {
+156:              width: 100%;
+157:              height: 100%;
+158:              object-fit: cover;
+159:              border-radius: 50%; /* Ensure the image itself is also circular */
+160:          }
+161:    
+162:          .top-bar {
+163:              background-color: #333; /* Or any color you prefer */
+164:              color: #fff;
+165:              padding: 0;
+166:              text-align: right;
+167:              height: 15px
+168:          }
+169:    
+170:          .top-bar {
+171:              display: flex;
+172:              justify-content: space-between;
+173:              padding: 10px;
+174:              background-color: #333;
+175:          }
+176:    
+177:          .auth-nav ul {
+178:              padding: 0;
+179:              list-style: none;
+180:              margin: 0;
+181:          }
+182:    
+183:          .auth-nav li {
+184:              display: inline;
+185:              margin-left: 15px;
+186:          }
+187:    
+188:          .auth-nav a {
+189:              text-decoration: none;
+190:              color: #fff;
+191:              font-weight: bold;
+192:          }
+193:    
+194:          header {
+195:              background-color: #333;
+196:              color: #fff;
+197:              text-align: center;
+198:              padding: 1em 0;
+199:              margin-top: 0; /* Ensure there's no space between the top bar and the header */
+200:          }
+201:    
+202:          .dropbtn {
+203:              background-color: #0624cd;
+204:              color: white;
+205:              padding: 10px;
+206:              font-size: 16px;
+207:              border: none;
+208:              cursor: pointer;
+209:              text-align: center; /* Center text */
+210:              width: 100%; /* Take up full width of parent */
+211:          }
+212:    
+213:          .dropdown {
+214:              position: relative;
+215:              display: inline-block;
+216:              width: 160px; /* Set a width */
+217:          }
+218:    
+219:          .dropdown-content {
+220:              display: none;
+221:              position: absolute;
+222:              background-color: #f9f9f9;
+223:              min-width: 160px;
+224:              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+225:              z-index: 1;
+226:              text-align: center; /* Center text */
+227:          }
+228:    
+229:          .dropdown-content a {
+230:              color: black;
+231:              padding: 12px 16px;
+232:              text-decoration: none;
+233:              display: block;
+234:          }
+235:    
+236:          .dropdown-content a:hover {
+237:              background-color: #f1f1f1;
+238:          }
+239:    
+240:          .dropdown:hover .dropdown-content {
+241:              display: block;
+242:          }
+243:    
+244:          .dropdown:hover .dropbtn {
+245:              background-color: #0624cd; /* No change in color on hover */
+246:          }
+247:    
+248:          .our-work {
+249:              margin: 20px;
+250:              padding: 20px;
+251:              background-color: #f4f4f4;
+252:              border-radius: 8px;
+253:              text-align: center; /* Center text */
+254:          }
+255:    
+256:          .our-work h2 {
+257:              font-size: 2em;
+258:              margin-bottom: 20px;
+259:              text-align: center; /* Center text */
+260:          }
+261:    
+262:          .lab {
+263:              margin-bottom: 20px;
+264:              text-align: center; /* Center text */
+265:          }
+266:    
+267:          .lab h3 {
+268:              font-size: 1.5em;
+269:              text-align: center; /* Center text */
+270:          }
+271:    
+272:          .lab p {
+273:              font-size: 1em;
+274:              line-height: 1.6;
+275:              text-align: center; /* Center text */
+276:          }
+277:    
+278:          .view-more {
+279:              display: inline-block;
+280:              padding: 10px 20px;
+281:              background-color: #1f31b9;
+282:              color: white;
+283:              text-decoration: none;
+284:              border-radius: 4px;
+285:          }
+286:    
+287:          .view-more:hover {
+288:              background-color: #1f31b9;
+289:          }
+290:    
+291:          .lab img {
+292:              max-width: 40%;
+293:              height: auto;
+294:              border-radius: 8px;
+295:              margin-bottom: 20px;
+296:              text-align: center; /* Center text */
+297:          }
+298:      </style>
+299:    </head>
+300:    <body>
+301:    <div class="top-bar">
+302:      <div class="dropdown">
+303:        <button class="dropbtn">Team Members</button>
+304:        <div class="dropdown-content">
+305:          <%= link_to "Charlie", "charlie/index.html" %>
+306:          <%= link_to "Trey", "trey/index.html" %>
+307:          <%= link_to "Tristan", "tristan/index.html" %>
+308:          <%= link_to "Miles", "miles/index.html" %>
+309:        </div>
+310:      </div>
+311:      <nav class="auth-nav">
+312:        <ul>
+313:          <li><a href="#comments">Comment</a></li>
+314:          <li><%= link_to "Sign Up", "auth/register.html" %></li>
+315:          <li><%= link_to "Login", "auth/login.html" %></li>
+316:        </ul>
+317:      </nav>
+318:    </div>
+319:    <header>
+320:      <div class="header-container">
+321:        <h1>Ballmer Peak Portfolio</h1>
+322:      </div>
+323:    </header>
+324:    <main>
+325:      <section class="intro">
+326:        <p>Welcome to the Ballmer Peak Portfolio! Get to know our amazing team members below:</p>
+327:      </section>
+328:      <section class="team-members">
+329:        <h2>Meet the Team</h2>
+330:        <ul>
+331:          <li>
+332:            <%= link_to "Charlie", charlie_index_path %>
+333:              <img src="images/charlie.jpeg" alt="Charlie">
+334:              <span>Charlie</span>
+335:            <% end %>
+336:          </li>
+337:          <li>
+338:            <%= link_to "Trey", trey_index_path %>
+339:              <img src="images/trey.jpeg" alt="Trey">
+340:              <span>Trey</span>
+341:            <% end %>
+342:          </li>
+343:          <li>
+344:            <%= link_to "Tristan", tristan_index_path %>
+345:              <img src="images/tristan.jpeg" alt="Tristan">
+346:              <span>Tristan</span>
+347:            <% end %>
+348:          </li>
+349:          <li>
+350:            <%= link_to "Miles", miles_index_path %>
+351:              <img src="images/miles.jpeg" alt="Miles">
+352:              <span>Miles</span>
+353:            <% end %>
+354:          </li>
+355:        </ul>
+356:      </section>
+357:    
+358:      <!-- Rest of your HTML content remains unchanged -->
+359:    
+360:    </main>
+361:    <footer>
+362:      <p>© 2023 Ballmer Peak Portfolio</p>
+363:    </footer>
+364:    </body>
+365:    </html>
+  
+app/views/home/index.html.erb:341: syntax error, unexpected `end'
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:49:48 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1761)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1853)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2732)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/charlie/index":String):
+    329:     <h2>Meet the Team</h2>
+    330:     <ul>
+    331:       <li>
+    332:         <%= link_to "Charlie", charlie_index_path do %>
+    333:           <img src="images/charlie.jpeg" alt="Charlie">
+    334:           <span>Charlie</span>
+    335:         <% end %>
+  
+app/views/home/index.html.erb:332
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:50:35 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 808)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 14219)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 15125)
+
+
+Started GET "/home/images/charlie.jpeg" for 127.0.0.1 at 2023-11-28 13:50:35 -0600
+Started GET "/home/images/trey.jpeg" for 127.0.0.1 at 2023-11-28 13:50:35 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/charlie.jpeg"):
+  
+Started GET "/home/images/miles.jpeg" for 127.0.0.1 at 2023-11-28 13:50:35 -0600
+Started GET "/home/images/tristan.jpeg" for 127.0.0.1 at 2023-11-28 13:50:35 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/trey.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/miles.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/tristan.jpeg"):
+  
+Started GET "/charlie/index" for 127.0.0.1 at 2023-11-28 13:50:39 -0600
+Processing by CharlieController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering charlie/index.html.erb within layouts/application
+  Rendered charlie/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2230)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 2681)
+
+
+Started GET "/charlie/images/charlie.jpeg" for 127.0.0.1 at 2023-11-28 13:50:39 -0600
+Started GET "/charlie/images/trey.jpeg" for 127.0.0.1 at 2023-11-28 13:50:39 -0600
+Started GET "/charlie/images/miles.jpeg" for 127.0.0.1 at 2023-11-28 13:50:39 -0600
+Started GET "/charlie/images/tristan.jpeg" for 127.0.0.1 at 2023-11-28 13:50:39 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/charlie/images/trey.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/charlie/images/tristan.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/charlie/images/charlie.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/charlie/images/miles.jpeg"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2023-11-28 13:50:41 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 133)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2268)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 2512)
+
+
+Started GET "/home/images/charlie.jpeg" for 127.0.0.1 at 2023-11-28 13:50:41 -0600
+Started GET "/home/images/trey.jpeg" for 127.0.0.1 at 2023-11-28 13:50:41 -0600
+Started GET "/home/images/tristan.jpeg" for 127.0.0.1 at 2023-11-28 13:50:41 -0600
+Started GET "/home/images/miles.jpeg" for 127.0.0.1 at 2023-11-28 13:50:41 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/trey.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/miles.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/charlie.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/home/images/tristan.jpeg"):
+  

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'miles/index'
   get 'trey/index'
   get 'tristan/index'
   get 'charlie/index'
