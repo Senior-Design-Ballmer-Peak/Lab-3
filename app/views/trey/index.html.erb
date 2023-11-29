@@ -147,22 +147,27 @@
     <p>GitHub: <a href="https://github.com/teckenrod" target="_blank">teckenrod</a></p>
   </section>
 
-  <!-- Comment Section -->
+
   <section class="comments" id="comments">
-    <h2>Comments</h2>
-    <ul id="commentList">
-      <!-- Comments will be appended here -->
-    </ul>
-    <div class="comment-form">
-      <h3>Leave a comment:</h3>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="comment">Comment:</label><br>
-      <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
-      <button onclick="submitComment()">Submit</button>
-    </div>
+    <% if user_signed_in? %>
+      <h2>Comments</h2>
+      <ul id="commentList">
+        <!-- Comments will be appended here -->
+      </ul>
+      <div class="comment-form">
+        <h3>Leave a comment:</h3>
+        <%= form_tag(comments_path, method: :post, remote: true) do %>
+          <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+          <label for="name">Name: <%= current_user.email %></label><br>
+          <label for="comment">Comment:</label><br>
+          <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+          <button type="submit">Submit</button>
+        <% end %>
+      </div>
+    <% end %>
   </section>
 </main>
+
 <footer>
   <p>© <%= Time.now.year %> Ballmer Peak Portfolio</p>
 </footer>
