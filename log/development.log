@@ -1869,3 +1869,30 @@ Processing by TristanController#index as HTML
 Completed 200 OK in 1626ms (Views: 1592.3ms | ActiveRecord: 0.0ms | Allocations: 43626)
 
 
+Started GET "/tristan/index" for 127.0.0.1 at 2023-11-28 23:52:45 -0600
+Processing by TristanController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tristan/index.html.erb within layouts/application
+  Rendered tristan/index.html.erb within layouts/application (Duration: 354.1ms | Allocations: 3334)
+  Rendered layout layouts/application.html.erb (Duration: 944.8ms | Allocations: 19526)
+Completed 200 OK in 993ms (Views: 961.6ms | ActiveRecord: 0.0ms | Allocations: 20430)
+
+
+Started GET "/tristan/index" for 127.0.0.1 at 2023-11-28 23:54:45 -0600
+Processing by TristanController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tristan/index.html.erb within layouts/application
+  Rendered tristan/index.html.erb within layouts/application (Duration: 150.8ms | Allocations: 2129)
+  Rendered layout layouts/application.html.erb (Duration: 497.9ms | Allocations: 16160)
+Completed 200 OK in 556ms (Views: 516.6ms | ActiveRecord: 0.0ms | Allocations: 17066)
+
+
+Started GET "/charlie/index" for 127.0.0.1 at 2023-11-28 23:54:56 -0600
+Processing by CharlieController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering charlie/index.html.erb within layouts/application
+  Rendered charlie/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 92)
+  Rendered layout layouts/application.html.erb (Duration: 96.2ms | Allocations: 2402)
+Completed 200 OK in 131ms (Views: 101.8ms | ActiveRecord: 0.0ms | Allocations: 2854)
+
+
