@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ballmer Peak Portfolio</title>
+  <%= csrf_meta_tags %>
+  <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
   <%= stylesheet_link_tag "styles", media: "all", "data-turbolinks-track": "reload" %>
 </head>
 <body>
@@ -22,7 +24,7 @@
     <ul>
       <li><a href="#comments">Comment</a></li>
       <% if user_signed_in? %>
-        <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+        <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, data: { confirm: 'Are you sure?' } %>
       <% else %>
         <li><%= link_to "Sign Up", "/users/sign_up" %></li>
         <li><%= link_to "Login", "/users/sign_in" %></li>

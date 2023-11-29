@@ -3892,3 +3892,159 @@ Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:27:20 -0600
   
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
   
+Started GET "/" for 127.0.0.1 at 2023-11-28 22:44:05 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  Rendered home/index.html.erb within layouts/application (Duration: 44.8ms | Allocations: 20022)
+  Rendered layout layouts/application.html.erb (Duration: 47.2ms | Allocations: 22251)
+Completed 200 OK in 62ms (Views: 48.9ms | ActiveRecord: 2.5ms | Allocations: 26597)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:44:05 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:44:07 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:47:47 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:51:06 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:51:09 -0600
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 32ms (ActiveRecord: 2.5ms | Allocations: 17814)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-28 22:51:09 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  Rendered home/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2605)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 4797)
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.1ms | Allocations: 6569)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:51:09 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 22:51:11 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  Rendered home/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1431)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 1842)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms | Allocations: 2097)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:51:11 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 22:51:54 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  Rendered home/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 6615)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 8719)
+Completed 200 OK in 17ms (Views: 13.6ms | ActiveRecord: 2.2ms | Allocations: 9648)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:51:54 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:51:55 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 22:53:20 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 853)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1264)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 1517)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:53:20 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:53:22 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 687)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 3097)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3604)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 5082)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:53:24 -0600
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"treyeck2@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "treyeck2@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 223ms (ActiveRecord: 0.1ms | Allocations: 3577)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-28 22:53:24 -0600
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1402)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1813)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 2110)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:53:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:53:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 22:55:16 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  Rendered home/index.html.erb within layouts/application (Duration: 37.2ms | Allocations: 20009)
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 22240)
+Completed 200 OK in 49ms (Views: 41.0ms | ActiveRecord: 2.3ms | Allocations: 26586)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:55:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:55:18 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
