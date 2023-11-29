@@ -108,20 +108,22 @@
 
 
   <!-- Comment Section -->
-  <section class="comments", id="comments">
-    <h2>Comments</h2>
-    <ul id="commentList">
-      <!-- Comments will be appended here -->
-    </ul>
-    <div class="comment-form">
-      <h3>Leave a comment:</h3>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="comment">Comment:</label><br>
-      <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
-      <button onclick="submitComment()">Submit</button>
-    </div>
-  </section>
+  <% if user_signed_in? %>
+    <section class="comments" id="comments">
+      <h2>Comments</h2>
+      <ul id="commentList">
+        <!-- Comments will be appended here -->
+      </ul>
+      <div class="comment-form">
+        <h3>Leave a comment:</h3>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" value="<%= current_user.email.split('@')[0] %>" readonly><br>
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+        <button onclick="submitComment()">Submit</button>
+      </div>
+    </section>
+  <% end %>
 </main>
 <footer>
   <p>© 2023 Ballmer Peak Portfolio</p>
