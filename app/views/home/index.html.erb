@@ -10,12 +10,12 @@
 <body>
 <div class="top-bar">
   <div class="dropdown">
-    <button class="dropbtn">Team Members</button>
+    <button class="dropdown">Team Members</button>
     <div class="dropdown-content">
-      <%= link_to "Charlie", "charlie/index.html" %>
-      <%= link_to "Trey", "trey/index.html" %>
-      <%= link_to "Tristan", "tristan/index.html" %>
-      <%= link_to "Miles", "miles/index.html" %>
+      <%= user_signed_in? ? link_to("Charlie", charlie_index_path) : content_tag(:span, "Charlie") %>
+      <%= user_signed_in? ? link_to("Trey", trey_index_path) : content_tag(:span, "Trey") %>
+      <%= user_signed_in? ? link_to("Tristan", tristan_index_path) : content_tag(:span, "Tristan") %>
+      <%= user_signed_in? ? link_to("Miles", miles_index_path) : content_tag(:span, "Miles") %>
     </div>
   </div>
   <nav class="auth-nav">
@@ -39,36 +39,36 @@
     <h2>Meet the Team</h2>
     <ul>
       <li>
-        <%= link_to charlie_index_path do %>
+        <%= user_signed_in? ? link_to(charlie_index_path) do %>
           <div class="team-member">
             <%= image_tag("charlie.jpeg", alt: "Charlie") %>
             <span>Charlie</span>
           </div>
-        <% end %>
+        <% end : image_tag("charlie.jpeg", alt: "Charlie", class: "team-member") %>
       </li>
       <li>
-        <%= link_to trey_index_path do %>
+        <%= user_signed_in? ? link_to(trey_index_path) do %>
           <div class="team-member">
             <%= image_tag("trey.jpeg", alt: "Trey") %>
             <span>Trey</span>
           </div>
-        <% end %>
+        <% end : image_tag("trey.jpeg", alt: "Trey", class: "team-member") %>
       </li>
       <li>
-        <%= link_to tristan_index_path do %>
+        <%= user_signed_in? ? link_to(tristan_index_path) do %>
           <div class="team-member">
             <%= image_tag("tristan.jpeg", alt: "Tristan") %>
             <span>Tristan</span>
           </div>
-        <% end %>
+        <% end : image_tag("tristan.jpeg", alt: "Tristan", class: "team-member") %>
       </li>
       <li>
-        <%= link_to miles_index_path do %>
+        <%= user_signed_in? ? link_to(miles_index_path) do %>
           <div class="team-member">
             <%= image_tag("miles.jpeg", alt: "Miles") %>
             <span>Miles</span>
           </div>
-        <% end %>
+        <% end : image_tag("miles.jpeg", alt: "Miles", class: "team-member") %>
       </li>
     </ul>
   </section>
@@ -112,13 +112,12 @@
       <input type="text" id="name" name="name"><br>
       <label for="comment">Comment:</label><br>
       <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
-      <button onclick="submitCommentToServer()">Submit</button>
+      <button onclick="submitComment()">Submit</button>
     </div>
   </section>
 </main>
 <footer>
   <p>© 2023 Ballmer Peak Portfolio</p>
 </footer>
-<script src="../../javascript/comments.js"></script>
 </body>
 </html>
