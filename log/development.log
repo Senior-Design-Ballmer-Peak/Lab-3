@@ -1697,3 +1697,104 @@ Completed 200 OK in 112ms (Views: 111.2ms | ActiveRecord: 0.0ms | Allocations: 4
   
 ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
   
+Started GET "/" for 127.0.0.1 at 2023-11-28 20:16:19 -0600
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3945.4ms | Allocations: 101197)
+  Rendered layout layouts/application.html.erb (Duration: 4317.8ms | Allocations: 115220)
+Completed 200 OK in 4811ms (Views: 4423.1ms | ActiveRecord: 0.0ms | Allocations: 122887)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
+  
+Started GET "/tristan/index" for 127.0.0.1 at 2023-11-28 20:16:38 -0600
+Processing by TristanController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tristan/index.html.erb within layouts/application
+  Rendered tristan/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 92)
+  Rendered layout layouts/application.html.erb (Duration: 89.0ms | Allocations: 2342)
+Completed 200 OK in 125ms (Views: 94.6ms | ActiveRecord: 0.0ms | Allocations: 2791)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
+  
+Started GET "/charlie/index" for 127.0.0.1 at 2023-11-28 20:16:46 -0600
+Processing by CharlieController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering charlie/index.html.erb within layouts/application
+  Rendered charlie/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 92)
+  Rendered layout layouts/application.html.erb (Duration: 92.2ms | Allocations: 2328)
+Completed 200 OK in 129ms (Views: 98.1ms | ActiveRecord: 0.0ms | Allocations: 2773)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:16:48 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 92)
+  Rendered layout layouts/application.html.erb (Duration: 88.7ms | Allocations: 2313)
+Completed 200 OK in 133ms (Views: 95.4ms | ActiveRecord: 0.0ms | Allocations: 2760)
+
+
+Started GET "/miles/index" for 127.0.0.1 at 2023-11-28 20:16:49 -0600
+Processing by MilesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering miles/index.html.erb within layouts/application
+  Rendered miles/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 92)
+  Rendered layout layouts/application.html.erb (Duration: 82.2ms | Allocations: 2326)
+Completed 200 OK in 117ms (Views: 87.8ms | ActiveRecord: 0.0ms | Allocations: 2771)
+
+
+Started GET "/auth/login.html" for 127.0.0.1 at 2023-11-28 20:16:55 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/auth/login.html"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 20:16:58 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 213.2ms | Allocations: 3755)
+  Rendered layout layouts/application.html.erb (Duration: 267.7ms | Allocations: 5780)
+Completed 200 OK in 291ms (Views: 269.3ms | ActiveRecord: 0.0ms | Allocations: 6017)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
+  
+Started GET "/auth/register.html" for 127.0.0.1 at 2023-11-28 20:17:00 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/auth/register.html"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-28 20:17:02 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 234.3ms | Allocations: 3752)
+  Rendered layout layouts/application.html.erb (Duration: 287.7ms | Allocations: 5735)
+Completed 200 OK in 310ms (Views: 289.6ms | ActiveRecord: 0.0ms | Allocations: 5975)
+
+
+Started GET "/charlie/index.html" for 127.0.0.1 at 2023-11-28 20:17:07 -0600
+Processing by CharlieController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering charlie/index.html.erb within layouts/application
+  Rendered charlie/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 69.8ms | Allocations: 2225)
+Completed 200 OK in 90ms (Views: 71.4ms | ActiveRecord: 0.0ms | Allocations: 2462)
+
+
+Started GET "/tristan/index.html" for 127.0.0.1 at 2023-11-28 20:17:09 -0600
+Processing by TristanController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tristan/index.html.erb within layouts/application
+  Rendered tristan/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 72.3ms | Allocations: 2219)
+Completed 200 OK in 91ms (Views: 73.7ms | ActiveRecord: 0.0ms | Allocations: 2456)
+
+
