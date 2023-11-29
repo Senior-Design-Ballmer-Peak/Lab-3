@@ -170,15 +170,25 @@ footer {
     width: 100%;
 }
 
-.carousel-container {
+.skills-carousel {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
     overflow: hidden;
-    width: 150%; /* or set a specific width */
+}
+
+.carousel-container {
+    display: flex;
+    animation: scroll 20s linear infinite; /* Adjust the duration as needed */
+    width: 200%; /* Double the width to create a seamless loop */
 }
 
 .carousel-slide {
-    display: flex;
-    animation: scroll 10s linear infinite;
-    width: 100%;
+    flex: 0 0 50%; /* Adjust this value based on the number of visible slides */
 }
 
 .carousel-slide img {
@@ -188,13 +198,14 @@ footer {
 }
 
 @keyframes scroll {
-    from {
+    0% {
         transform: translateX(0);
     }
-    to {
-        transform: translateX(-50%);
+    100% {
+        transform: translateX(-100%);
     }
 }
+
 
 .carousel-slide:hover {
     animation-play-state: paused;
