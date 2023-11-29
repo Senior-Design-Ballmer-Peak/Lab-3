@@ -114,12 +114,6 @@ footer {
     color: #ecf0f1;
 }
 
-/*.undergraduate-research, .fishing-hobby, .space-force, .volleyall, .eagle-scout, .space{*/
-/*    padding: 40px 20px;*/
-/*    background-color: #ecf0f1;*/
-/*    text-align: center;*/
-/*}*/
-
 .feature-image {
     max-width: 100%;
     height: auto;
@@ -127,32 +121,14 @@ footer {
     margin-bottom: 20px;
 }
 
-/*.space-force-images {*/
-/*    display: flex;*/
-/*    justify-content: space-around;*/
-/*    gap: 20px;*/
-/*}*/
-
-/*.space-force-image {*/
-/*    width: 30%;*/
-/*    border-radius: 10px;*/
-/*}*/
-
-/*.fishing-images {*/
-/*    display: flex;*/
-/*    justify-content: space-around;*/
-/*    gap: 20px;*/
-/*}*/
-
-/*.fishing-image {*/
-/*    width: 30%;*/
-/*    border-radius: 10px;*/
-/*}*/
-
-/*.volleyball {*/
-/*    text-align: center;*/
-/*}*/
-
+.iowa-images {
+    max-width: 100%; /* Set a maximum width for the images */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+}
 
 .small-image {
     width: 30%; /* or any other size you prefer */
@@ -168,17 +144,34 @@ footer {
 .carousel {
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .carousel-container {
+    display: flex;
+    animation: scroll 20s linear infinite; /* Adjust the duration as needed */
+    width: 200%; /* Double the width to create a seamless loop */
+.skills-carousel {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
     overflow: hidden;
-    width: 150%; /* or set a specific width */
 }
 
 .carousel-slide {
+    flex: 0 0 50%; /* Adjust this value based on the number of visible slides */
+.carousel-container {
     display: flex;
-    animation: scroll 10s linear infinite;
-    width: 100%;
+    animation: scroll 20s linear infinite; /* Adjust the duration as needed */
+    width: 200%; /* Double the width to create a seamless loop */
+}
+
+.carousel-slide {
+    flex: 0 0 50%; /* Adjust this value based on the number of visible slides */
 }
 
 .carousel-slide img {
@@ -188,11 +181,11 @@ footer {
 }
 
 @keyframes scroll {
-    from {
+    0% {
         transform: translateX(0);
     }
-    to {
-        transform: translateX(-50%);
+    100% {
+        transform: translateX(-50%); /* Adjust to half the width to fix looping */
     }
 }
 
