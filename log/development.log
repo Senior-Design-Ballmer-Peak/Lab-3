@@ -1845,3 +1845,481 @@ Processing by TreyController#index as HTML
 Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 13021)
 
 
+Started GET "/" for 127.0.0.1 at 2023-11-28 20:34:12 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1232)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3554)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 4465)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 20:34:12 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:34:14 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 131.1ms | Allocations: 44620)
+  Rendered layout layouts/application.html.erb (Duration: 131.3ms | Allocations: 44711)
+Completed 500 Internal Server Error in 134ms (ActiveRecord: 0.0ms | Allocations: 45156)
+
+
+  
+ActionView::Template::Error (couldn't find file 'slick' with type 'text/css'
+Checked in these paths: 
+  /Users/treyeckenrod/RubymineProjects/Lab-3/app/assets/config
+  /Users/treyeckenrod/RubymineProjects/Lab-3/app/assets/images
+  /Users/treyeckenrod/RubymineProjects/Lab-3/app/assets/stylesheets
+  /Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/stimulus-rails-1.3.0/app/assets/javascripts
+  /Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/assets/javascripts
+  /Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/importmap-rails-1.2.3/app/assets/javascripts
+  /Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/assets/javascripts
+  /Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.1.2/app/assets/stylesheets
+  /Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actioncable-7.1.2/app/assets/javascripts
+  /Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/activestorage-7.1.2/app/assets/javascripts
+  /Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionview-7.1.2/app/assets/javascripts
+  /Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionview-7.1.2/lib/assets/compiled
+  /Users/treyeckenrod/RubymineProjects/Lab-3/app/javascript
+  /Users/treyeckenrod/RubymineProjects/Lab-3/vendor/javascript):
+  
+sprockets (4.2.1) lib/sprockets/resolve.rb:62:in `resolve!'
+sprockets (4.2.1) lib/sprockets/directive_processor.rb:427:in `resolve'
+sprockets (4.2.1) lib/sprockets/directive_processor.rb:216:in `process_require_directive'
+sprockets (4.2.1) lib/sprockets/directive_processor.rb:189:in `block in process_directives'
+sprockets (4.2.1) lib/sprockets/directive_processor.rb:187:in `each'
+sprockets (4.2.1) lib/sprockets/directive_processor.rb:187:in `process_directives'
+sprockets (4.2.1) lib/sprockets/directive_processor.rb:84:in `_call'
+sprockets (4.2.1) lib/sprockets/directive_processor.rb:65:in `call'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.1) lib/sprockets/loader.rb:184:in `load_from_unloaded'
+sprockets (4.2.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.1) lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.1) lib/sprockets/bundle.rb:27:in `call'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.1) lib/sprockets/loader.rb:184:in `load_from_unloaded'
+sprockets (4.2.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.1) lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.1) lib/sprockets/bundle.rb:32:in `block in call'
+/Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/3.2.0/set.rb:511:in `each_key'
+/Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/3.2.0/set.rb:511:in `each'
+sprockets (4.2.1) lib/sprockets/bundle.rb:31:in `call'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.1) lib/sprockets/loader.rb:184:in `load_from_unloaded'
+sprockets (4.2.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.1) lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.1) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.2.1) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `block in synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:35:15 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 93.9ms | Allocations: 61208)
+  Rendered layout layouts/application.html.erb (Duration: 94.7ms | Allocations: 61825)
+Completed 200 OK in 96ms (Views: 95.1ms | ActiveRecord: 0.0ms | Allocations: 62080)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:36:44 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 27.3ms | Allocations: 13153)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 13747)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.0ms | Allocations: 13994)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:36:49 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 17.7ms | Allocations: 13155)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 13761)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 14007)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-28 20:36:57 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 426)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1023)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 1269)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 20:36:57 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:36:59 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 18.1ms | Allocations: 13271)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 13871)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 14120)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 20:37:17 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:37:18 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 27.7ms | Allocations: 14506)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 16582)
+Completed 200 OK in 30ms (Views: 30.0ms | ActiveRecord: 0.0ms | Allocations: 16829)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:42:03 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 36.9ms | Allocations: 14613)
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 16921)
+Completed 200 OK in 42ms (Views: 40.5ms | ActiveRecord: 0.0ms | Allocations: 17829)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:43:32 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 24.7ms | Allocations: 13155)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 13764)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 14010)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:44:36 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 25.0ms | Allocations: 13837)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 13928)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms | Allocations: 14160)
+
+
+  
+ActionView::Template::Error (The asset "skills-carousel.js" is not present in the asset pipeline.
+):
+    106:       </div>
+    107:     </div>
+    108:   </section>
+    109:   <%= javascript_include_tag 'skills-carousel' %>
+    110: 
+    111:   <section class="basketball">
+    112:     <h2>Basketball</h2>
+  
+app/views/trey/index.html.erb:109
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:44:45 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 19.9ms | Allocations: 13032)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 15351)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 16253)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:45:17 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 11724)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 12321)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 12564)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-28 20:45:26 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1160)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1762)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2213)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 20:45:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:45:27 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 11768)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 12368)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 12612)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:50:25 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 146.9ms | Allocations: 64984)
+  Rendered layout layouts/application.html.erb (Duration: 149.7ms | Allocations: 67300)
+Completed 200 OK in 152ms (Views: 151.5ms | ActiveRecord: 0.0ms | Allocations: 68204)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:50:42 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 13851)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 16168)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 17073)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:51:07 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 14.5ms | Allocations: 13921)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 16235)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 17140)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:52:07 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 13902)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 16218)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 17120)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:53:23 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 12588)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 13194)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 13437)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:55:56 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 12557)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 13181)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 13424)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:56:35 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 12557)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 13139)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 13383)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:57:44 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 12557)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 13166)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 13409)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:58:21 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 12602)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 13202)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 13446)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:58:31 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 13894)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 16213)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 17118)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:58:41 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 13919)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 16251)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 17156)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 20:59:15 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 13853)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 16161)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 17063)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 21:02:04 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 14296)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 16625)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 17530)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 21:02:11 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 14259)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 16554)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 17456)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 21:02:58 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 14243)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 16549)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 17454)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 21:03:18 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 15.1ms | Allocations: 14271)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 16579)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 17484)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 21:03:28 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 17.6ms | Allocations: 14231)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 16544)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 17446)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 21:03:36 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 14247)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 16556)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 17461)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 21:05:24 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 17.4ms | Allocations: 15122)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 17436)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 18341)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 21:11:53 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 27.5ms | Allocations: 17640)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 19963)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.0ms | Allocations: 20870)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-28 21:13:13 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1160)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1768)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 2219)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 21:13:13 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 21:14:16 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 47.0ms | Allocations: 18046)
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 20363)
+Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.0ms | Allocations: 21269)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-28 21:14:26 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1160)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1777)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 2227)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 21:14:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 21:14:38 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 21:15:23 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 23.3ms | Allocations: 18294)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 20610)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms | Allocations: 21514)
+
+
