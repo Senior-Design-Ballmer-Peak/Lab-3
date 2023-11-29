@@ -77,6 +77,21 @@ h1 {
     margin-top: 0;
 }
 
+.skills ul {
+    list-style: none;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills li {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
 .contact {
     padding: 40px 20px;
     background-color: #ecf0f1;
@@ -92,15 +107,17 @@ h1 {
     text-decoration: underline;
 }
 
-.internship, .teaching-assistant, .embedded-project{
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.undergraduate-research, .fishing-hobby, .space-force, .volleyall, .eagle-scout, .space{
     padding: 40px 20px;
     background-color: #ecf0f1;
     text-align: center;
-}
-
-.limited-width {
-    max-width: 60%; /* Adjust this percentage to your desired maximum width relative to the container */
-    margin: 0 auto; /* Centers the paragraph if the container allows */
 }
 
 .feature-image {
@@ -110,8 +127,75 @@ h1 {
     margin-bottom: 20px;
 }
 
+.space-force-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.space-force-image {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.fishing-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.fishing-image {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.volleyball {
+    text-align: center;
+}
+
+
 .small-image {
     width: 30%; /* or any other size you prefer */
     margin: 0 auto; /* to center the image */
     display: block; /* add this line */
+}
+
+.skills-carousel {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 150%; /* or set a specific width */
+}
+
+.carousel-slide {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    width: 100%;
+}
+
+.carousel-slide img {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.carousel-slide:hover {
+    animation-play-state: paused;
 }
