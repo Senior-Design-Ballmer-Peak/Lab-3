@@ -5,7 +5,10 @@ class CommentsController < ApplicationController
     @comment = current_user.comments.build(comment_params)
 
     if @comment.save
-      render json: @comment, status: :created
+      @comments = Comment.all
+      respond_to do |format|
+        format.turbo_stream
+      end
     else
       render json: @comment.errors, status: :unprocessable_entity
     end
