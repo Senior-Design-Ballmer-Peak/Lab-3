@@ -8,7 +8,7 @@
   <%= stylesheet_link_tag 'treyStyles', media: 'all', 'data-turbolinks-track': 'reload' %>
 </head>
 <body>
-<header>
+<header style="background-image: url('<%= asset_path("treysImages/rockies.jpeg") %>'); background-size: cover; background-position: center; background-repeat: no-repeat;">
   <h1>Trey's Portfolio</h1>
   <nav>
     <ul>
@@ -24,27 +24,27 @@
     <p> INTRODUCTION </p>
   </section>
 
+
   <section class="iowa">
+    <p><%= image_tag 'treysImages/young-hawkeye.jpeg', alt: 'Young Trey at Iowa basketball game', class: 'feature-image' %></p>
+    <p><%= image_tag 'treysImages/hurkey.jpeg', alt: 'Trey next to Hurkey', class: 'feature-image' %></p>
     <h2>University of Iowa</h2>
-    <!--    #<%#= image_tag 'charliesImages/bannerPhoto.jpeg', alt: 'Charlie in the Downtown Banner Campaign', class: 'feature-image small-image' %>-->
     <p> Section Description </p>
   </section>
 
   <section class="udemy">
     <h2>Online Classes</h2>
-    <!--    #<%#= image_tag 'charliesImages/bannerPhoto.jpeg', alt: 'Charlie in the Downtown Banner Campaign', class: 'feature-image small-image' %>-->
+
     <p> Section Description </p>
   </section>
 
   <section class="internship">
     <h2>AI/ML Internship</h2>
-<!--    #<%#= image_tag 'charliesImages/bannerPhoto.jpeg', alt: 'Charlie in the Downtown Banner Campaign', class: 'feature-image small-image' %>-->
     <p> Section Description </p>
   </section>
 
   <section class="surplus">
     <h2>Laptop/PC technician</h2>
-    <!--    #<%#= image_tag 'charliesImages/bannerPhoto.jpeg', alt: 'Charlie in the Downtown Banner Campaign', class: 'feature-image small-image' %>-->
     <p> Section Description </p>
   </section>
 
@@ -52,6 +52,7 @@
     <h2>My Projects</h2>
     <div class="project">
       <h3>CookSmart</h3>
+      <p><%= image_tag 'treysImages/CookSmart.png', alt: 'iPhone App Icon', class: 'feature-image' %></p>
       <p>iPhone App</p>
     </div>
     <div class="project">
@@ -108,14 +109,22 @@
   </section>
 
   <section class="basketball">
+    <p><%= image_tag 'treysImages/basketball.jpeg', alt: 'Trey playing basketball in high school', class: 'feature-image' %></p>
+    <p><%= image_tag 'treysImages/bulls.jpeg', alt: 'Bulls Game', class: 'feature-image' %></p>
     <h2>Basketball</h2>
-    <!--    #<%#= image_tag 'charliesImages/bannerPhoto.jpeg', alt: 'Charlie in the Downtown Banner Campaign', class: 'feature-image small-image' %>-->
     <p> Section Description </p>
   </section>
 
   <section class="outdoor">
-    <h2>Hiking / Disc Golf / Camping</h2>
-    <!--    #<%#= image_tag 'charliesImages/bannerPhoto.jpeg', alt: 'Charlie in the Downtown Banner Campaign', class: 'feature-image small-image' %>-->
+    <h2>Outdoors</h2>
+    <p><%= image_tag 'treysImages/black-elk-peak.jpeg', alt: 'Photo from atop Black Elk Peak in South Dakota', class: 'feature-image' %></p>
+    <p><%= image_tag 'treysImages/camelback.jpeg', alt: 'Looking down on the hike up camelback in Phoenix, Arizona', class: 'feature-image' %></p>
+    <p><%= image_tag 'treysImages/devils-lake.jpeg', alt: 'A nice view of Devil\'s Lake state park in Wisconsin', class: 'feature-image' %></p>
+    <p><%= image_tag 'treysImages/mount-garfield.jpeg', alt: 'The view from Trey\'s favorite hike, up Mount Garfield in Grand Junction, Colorado', class: 'feature-image' %></p>
+    <p><%= image_tag 'treysImages/starved-rock.jpeg', alt: 'One of the canyons that live in Starved Rock State Park, Illinois', class: 'feature-image' %></p>
+    <p><%= image_tag 'treysImages/rockies.jpeg', alt: 'A beautiful view of the Rocky Mountain Range in Colorado', class: 'feature-image' %></p>
+    <p><%= image_tag 'treysImages/disc-golf.jpeg', alt: 'A photo at Brookwood Disc Golf Course in Waverly, Iowa', class: 'feature-image' %></p>
+    <p><%= image_tag 'treysImages/ace.jpeg', alt: 'A photo of Trey\'s first ace, during a glow round at his home course', class: 'feature-image' %></p>
     <p> Section Description </p>
   </section>
 
