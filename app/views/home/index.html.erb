@@ -122,8 +122,8 @@
       <div class="comment-form">
         <%= form_with(url: comments_path, method: "post", remote: true) do |form| %>
           <h3>Leave a comment:</h3>
-          <%= form.label :username, "Username:" %><br>
-          <%= form.text_field :username, value: current_user.email.split('@')[0], readonly: true %><br>
+          <%= form.text_field :name, value: current_user.email.split('@')[0], readonly: true %><br>
+          <%= form.text_area :comment, rows: 4, cols: 50 %><br>
           <%= form.label :comment, "Comment:" %><br>
           <%= form.text_area :comment, rows: 4, cols: 50 %><br><br>
           <%= form.submit "Submit" %>
