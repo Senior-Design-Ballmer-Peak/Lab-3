@@ -1,0 +1,13 @@
+<!-- app/views/comments/create.turbo_stream.erb -->
+
+<%= turbo_stream.append(
+      :commentList,
+      partial: 'comments/comment',
+      locals: { comment: @comment }
+    ) %>
+
+<%= turbo_stream.replace(
+      :commentForm,
+      partial: 'comments/form',
+      locals: { comment: Comment.new }
+    ) %>
