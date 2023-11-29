@@ -1798,3 +1798,21 @@ Processing by TristanController#index as HTML
 Completed 200 OK in 91ms (Views: 73.7ms | ActiveRecord: 0.0ms | Allocations: 2456)
 
 
+Started GET "/tristan/index" for 127.0.0.1 at 2023-11-28 20:37:05 -0600
+Processing by TristanController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tristan/index.html.erb within layouts/application
+  Rendered tristan/index.html.erb within layouts/application (Duration: 1667.5ms | Allocations: 28284)
+  Rendered layout layouts/application.html.erb (Duration: 1984.5ms | Allocations: 42166)
+Completed 200 OK in 2047ms (Views: 2008.9ms | ActiveRecord: 0.0ms | Allocations: 43063)
+
+
+Started GET "/tristan/index" for 127.0.0.1 at 2023-11-28 20:37:16 -0600
+Processing by TristanController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tristan/index.html.erb within layouts/application
+  Rendered tristan/index.html.erb within layouts/application (Duration: 44.3ms | Allocations: 753)
+  Rendered layout layouts/application.html.erb (Duration: 112.1ms | Allocations: 2821)
+Completed 200 OK in 136ms (Views: 113.9ms | ActiveRecord: 0.0ms | Allocations: 3061)
+
+
