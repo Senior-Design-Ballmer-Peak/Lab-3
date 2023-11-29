@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'home#index'
 
   get '/charlie/index', to: 'charlie#index', as: 'charlie_index'
@@ -12,6 +13,7 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
 
+  resources :comments, only: [:create]
   # Defines the root path route ("/")
   # root "posts#index"
 end
