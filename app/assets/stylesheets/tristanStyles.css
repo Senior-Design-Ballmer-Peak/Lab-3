@@ -40,3 +40,9 @@ h1 {
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+.introduction {
+    background-color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+}
