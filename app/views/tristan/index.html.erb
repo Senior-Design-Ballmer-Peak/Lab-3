@@ -46,6 +46,15 @@
   </section>
 
 
+  <section class="comments" id="comments">
+    <% if user_signed_in? %>
+      <h2>Comments</h2>
+      <%= render 'comments/comment_list', comments: Comment.where(page: 'tristan').order(created_at: :desc).limit(10) %>
+      <div class="comment-form" id="commentForm">
+        <%= render 'comments/form', comment: Comment.new %>
+      </div>
+    <% end %>
+  </section>
 
   <section class="contact">
     <h2>Contact Me</h2>
