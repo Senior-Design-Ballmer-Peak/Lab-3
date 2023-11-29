@@ -91,3 +91,22 @@ h1 {
 .contact a:hover {
     text-decoration: underline;
 }
+
+.internship, .teaching-assistant{
+    padding: 40px 20px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+.feature-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.small-image {
+    width: 30%; /* or any other size you prefer */
+    margin: 0 auto; /* to center the image */
+    display: block; /* add this line */
+}
