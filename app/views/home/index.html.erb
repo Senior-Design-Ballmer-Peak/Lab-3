@@ -5,27 +5,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ballmer Peak Portfolio</title>
+  <%= csrf_meta_tags %>
+  <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
   <%= stylesheet_link_tag "styles", media: "all", "data-turbolinks-track": "reload" %>
 </head>
 <body>
 <div class="top-bar">
   <div class="dropdown">
-    <button class="dropbtn">Team Members</button>
+    <button class="dropdown">Team Members</button>
     <div class="dropdown-content">
-      <%= link_to "Charlie", "charlie/index.html" %>
-      <%= link_to "Trey", "trey/index.html" %>
-      <%= link_to "Tristan", "tristan/index.html" %>
-      <%= link_to "Miles", "miles/index.html" %>
+      <%= user_signed_in? ? link_to("Charlie", charlie_index_path) : content_tag(:span, "Charlie") %>
+      <%= user_signed_in? ? link_to("Trey", trey_index_path) : content_tag(:span, "Trey") %>
+      <%= user_signed_in? ? link_to("Tristan", tristan_index_path) : content_tag(:span, "Tristan") %>
+      <%= user_signed_in? ? link_to("Miles", miles_index_path) : content_tag(:span, "Miles") %>
     </div>
   </div>
   <nav class="auth-nav">
     <ul>
       <li><a href="#comments">Comment</a></li>
-
+      <% if user_signed_in? %>
+        <%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete } %>
+      <% else %>
+        <li><%= link_to "Sign Up", "/users/sign_up" %></li>
+        <li><%= link_to "Login", "/users/sign_in" %></li>
+      <% end %>
     </ul>
   </nav>
 </div>
-<header>
+<header style="background-image: url('<%= asset_path("mountain.jpeg") %>'); background-size: cover; background-position: center; background-repeat: no-repeat;">
   <div class="header-container">
     <h1>Ballmer Peak Portfolio</h1>
   </div>
@@ -38,36 +45,36 @@
     <h2>Meet the Team</h2>
     <ul>
       <li>
-        <%= link_to charlie_index_path do %>
+        <%= user_signed_in? ? link_to(charlie_index_path) do %>
           <div class="team-member">
             <%= image_tag("charlie.jpeg", alt: "Charlie") %>
             <span>Charlie</span>
           </div>
-        <% end %>
+        <% end : image_tag("charlie.jpeg", alt: "Charlie", class: "team-member") %>
       </li>
       <li>
-        <%= link_to trey_index_path do %>
+        <%= user_signed_in? ? link_to(trey_index_path) do %>
           <div class="team-member">
             <%= image_tag("trey.jpeg", alt: "Trey") %>
             <span>Trey</span>
           </div>
-        <% end %>
+        <% end : image_tag("trey.jpeg", alt: "Trey", class: "team-member") %>
       </li>
       <li>
-        <%= link_to tristan_index_path do %>
+        <%= user_signed_in? ? link_to(tristan_index_path) do %>
           <div class="team-member">
             <%= image_tag("tristan.jpeg", alt: "Tristan") %>
             <span>Tristan</span>
           </div>
-        <% end %>
+        <% end : image_tag("tristan.jpeg", alt: "Tristan", class: "team-member") %>
       </li>
       <li>
-        <%= link_to miles_index_path do %>
+        <%= user_signed_in? ? link_to(miles_index_path) do %>
           <div class="team-member">
             <%= image_tag("miles.jpeg", alt: "Miles") %>
             <span>Miles</span>
           </div>
-        <% end %>
+        <% end : image_tag("miles.jpeg", alt: "Miles", class: "team-member") %>
       </li>
     </ul>
   </section>
@@ -99,22 +106,17 @@
 
 
 
-  <!-- Comment Section -->
-  <section class="comments", id="comments">
-    <h2>Comments</h2>
-    <ul id="commentList">
-      <!-- Comments will be appended here -->
-    </ul>
-    <div class="comment-form">
-      <h3>Leave a comment:</h3>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="comment">Comment:</label><br>
-      <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
-      <button onclick="submitComment()">Submit</button>
-    </div>
+  <section class="comments" id="comments">
+    <% if user_signed_in? %>
+      <h2>Comments</h2>
+      <%= render 'comments/comment_list', comments: Comment.where(page: 'home').order(created_at: :desc).limit(10) %>
+      <div class="comment-form" id="commentForm">
+        <%= render 'comments/form', comment: Comment.new %>
+      </div>
+    <% end %>
   </section>
 </main>
+
 <footer>
   <p>© 2023 Ballmer Peak Portfolio</p>
 </footer>
