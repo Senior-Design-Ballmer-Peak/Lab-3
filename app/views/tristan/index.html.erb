@@ -7,4 +7,17 @@
   <title><%= "Tristan's Portfolio - Ballmer Peak Portfolio" %></title>
   <%= stylesheet_link_tag 'tristanStyles', media: 'all', 'data-turbolinks-track': 'reload' %>
 </head>
+<body>
+<header>
+  <h1>Tristan's Portfolio</h1>
+  <nav>
+    <ul>
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'Login', 'auth/login.html' %></li>
+      <li><%= link_to 'Sign Up', 'auth/register.html' %></li>
+    </ul>
+  </nav>
+</header>
+
+</body>
 </html>
