@@ -1,0 +1,9 @@
+<!-- app/views/comments/_form.html.erb -->
+
+<h3>Leave a comment:</h3>
+<%= form_with(model: comment, remote: true) do |form| %>
+  <label for="comment">Comment:</label><br>
+  <%= form.hidden_field :page, value: controller_name %>
+  <%= form.text_area :content, id: 'comment_content', rows: '4', cols: '50' %><br><br>
+  <%= form.submit 'Submit', id: 'commentSubmit' %>
+<% end %>

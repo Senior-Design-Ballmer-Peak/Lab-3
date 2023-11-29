@@ -147,22 +147,18 @@
     <p>GitHub: <a href="https://github.com/teckenrod" target="_blank">teckenrod</a></p>
   </section>
 
-  <!-- Comment Section -->
+
   <section class="comments" id="comments">
-    <h2>Comments</h2>
-    <ul id="commentList">
-      <!-- Comments will be appended here -->
-    </ul>
-    <div class="comment-form">
-      <h3>Leave a comment:</h3>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="comment">Comment:</label><br>
-      <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
-      <button onclick="submitComment()">Submit</button>
-    </div>
+    <% if user_signed_in? %>
+      <h2>Comments</h2>
+      <%= render 'comments/comment_list', comments: Comment.where(page: 'trey').order(created_at: :desc).limit(10) %>
+      <div class="comment-form" id="commentForm">
+        <%= render 'comments/form', comment: Comment.new %>
+      </div>
+    <% end %>
   </section>
 </main>
+
 <footer>
   <p>© <%= Time.now.year %> Ballmer Peak Portfolio</p>
 </footer>
