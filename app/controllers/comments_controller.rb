@@ -1,8 +1,9 @@
-# app/controllers/comments_controller.rb
-
 class CommentsController < ApplicationController
+  before_action :authenticate_user!, only: [:create]  # Ensure the user is signed in for comment creation
+
   def create
-    @comment = Comment.new(comment_params)
+    @comment = current_user.comments.build(comment_params)
+
     if @comment.save
       render json: @comment, status: :created
     else
@@ -13,6 +14,6 @@ class CommentsController < ApplicationController
   private
 
   def comment_params
-    params.require(:comment).permit(:name, :content)
+    params.require(:comment).permit(:content)
   end
 end

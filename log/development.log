@@ -4226,3 +4226,218 @@ Processing by TreyController#index as HTML
 Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 1656)
 
 
+Started GET "/" for 127.0.0.1 at 2023-11-29 00:00:11 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  Rendered home/index.html.erb within layouts/application (Duration: 49.7ms | Allocations: 20302)
+  Rendered layout layouts/application.html.erb (Duration: 51.7ms | Allocations: 22532)
+Completed 200 OK in 69ms (Views: 54.6ms | ActiveRecord: 2.1ms | Allocations: 26878)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 00:00:11 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-29 00:00:17 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  Rendered trey/index.html.erb within layouts/application (Duration: 388.6ms | Allocations: 94673)
+  Rendered layout layouts/application.html.erb (Duration: 389.3ms | Allocations: 95084)
+Completed 200 OK in 391ms (Views: 390.2ms | ActiveRecord: 0.1ms | Allocations: 95565)
+
+
+Started POST "/comments" for 127.0.0.1 at 2023-11-29 00:02:29 -0600
+Processing by CommentsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>"test"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1057)
+
+
+  
+NoMethodError (undefined method `permit' for "test":String):
+  
+app/controllers/comments_controller.rb:16:in `comment_params'
+app/controllers/comments_controller.rb:5:in `create'
+Started GET "/" for 127.0.0.1 at 2023-11-29 00:02:33 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  Rendered home/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1583)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 1994)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 2247)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-29 00:02:33 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1573)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 1985)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.1ms | Allocations: 2233)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 00:02:33 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-29 00:03:01 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  Rendered home/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 6924)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 9027)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 1.5ms | Allocations: 9953)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 00:03:01 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-29 00:06:46 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  Rendered home/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 6888)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 8991)
+Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 1.6ms | Allocations: 9919)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 00:06:47 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started POST "/comments" for 127.0.0.1 at 2023-11-29 00:06:53 -0600
+Processing by CommentsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>"testing"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 3207)
+
+
+  
+NoMethodError (undefined method `comments' for #<User id: 1, email: "treyeck2@gmail.com", created_at: "2023-11-29 05:04:25.414355000 +0000", updated_at: "2023-11-29 05:29:29.416890000 +0000">):
+  
+app/controllers/comments_controller.rb:5:in `create'
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserIdToComments (20231129060812)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acomments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "acomments" ("id","name","content","created_at","updated_at")
+                     SELECT "id","name","content","created_at","updated_at" FROM "comments"[0m
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("id","name","content","created_at","updated_at")
+                     SELECT "id","name","content","created_at","updated_at" FROM "acomments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "acomments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acomments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_user_id" ON "acomments" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "acomments" ("id","name","content","created_at","updated_at","user_id")
+                     SELECT "id","name","content","created_at","updated_at","user_id" FROM "comments"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "user_id" integer NOT NULL, CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("id","name","content","created_at","updated_at","user_id")
+                     SELECT "id","name","content","created_at","updated_at","user_id" FROM "acomments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "acomments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231129060812') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-11-29 00:08:55 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  Rendered home/index.html.erb within layouts/application (Duration: 45.1ms | Allocations: 20307)
+  Rendered layout layouts/application.html.erb (Duration: 47.2ms | Allocations: 22537)
+Completed 200 OK in 62ms (Views: 50.3ms | ActiveRecord: 1.7ms | Allocations: 26883)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 00:08:55 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started POST "/comments" for 127.0.0.1 at 2023-11-29 00:09:01 -0600
+Processing by CommentsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>"testing"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3247)
+
+
+  
+NoMethodError (undefined method `comments' for #<User id: 1, email: "treyeck2@gmail.com", created_at: "2023-11-29 05:04:25.414355000 +0000", updated_at: "2023-11-29 05:29:29.416890000 +0000">):
+  
+app/controllers/comments_controller.rb:5:in `create'
+Started GET "/" for 127.0.0.1 at 2023-11-29 00:10:06 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  Rendered home/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 6888)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 8991)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 1.6ms | Allocations: 9926)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 00:10:07 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started POST "/comments" for 127.0.0.1 at 2023-11-29 00:10:17 -0600
+Processing by CommentsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>"testing"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.3ms | Allocations: 8332)
+
+
+  
+NoMethodError (undefined method `permit' for "testing":String):
+  
+app/controllers/comments_controller.rb:17:in `comment_params'
+app/controllers/comments_controller.rb:5:in `create'
+Started GET "/" for 127.0.0.1 at 2023-11-29 00:11:01 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  Rendered home/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1590)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2001)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms | Allocations: 2253)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 00:11:01 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
