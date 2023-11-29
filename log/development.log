@@ -1699,7 +1699,7 @@ ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.
   
 Started GET "/" for 127.0.0.1 at 2023-11-28 15:50:45 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -1712,7 +1712,7 @@ db/migrate/20231128214606_create_comments.rb
 
 
 ):
-  
+
 activerecord (7.1.2) lib/active_record/migration.rb:754:in `check_pending_migrations'
 activerecord (7.1.2) lib/active_record/migration.rb:643:in `block (2 levels) in call'
 activesupport (7.1.2) lib/active_support/file_update_checker.rb:85:in `execute'
@@ -1778,12 +1778,12 @@ Completed 200 OK in 210ms (Views: 203.4ms | ActiveRecord: 0.0ms | Allocations: 7
 
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 15:51:01 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/images/mountain.png"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 15:54:39 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -1794,13 +1794,13 @@ Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 114
 
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 15:54:39 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
+
 Started GET "/images/mountain.png" for 127.0.0.1 at 2023-11-28 15:54:39 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.png"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 15:54:41 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -1812,12 +1812,12 @@ Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 6216)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 15:54:41 -0600
 Started GET "/images/mountain.png" for 127.0.0.1 at 2023-11-28 15:54:41 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.png"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 15:58:38 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by HomeController#index as HTML
@@ -1829,13 +1829,13 @@ Completed 200 OK in 175ms (Views: 165.8ms | ActiveRecord: 0.0ms | Allocations: 7
 
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 15:58:39 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
+
 Started GET "/images/mountain.png" for 127.0.0.1 at 2023-11-28 15:58:39 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.png"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:00:36 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -1846,13 +1846,13 @@ Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 112
 
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:00:36 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
+
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:00:36 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 16:00:49 -0600
 Processing by TreyController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -1873,12 +1873,12 @@ Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 6186)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:00:56 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:00:56 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:02:27 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by HomeController#index as HTML
@@ -1891,12 +1891,12 @@ Completed 200 OK in 21ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 929
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:02:28 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:02:28 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:04:27 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -1908,12 +1908,12 @@ Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1293)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:04:27 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:04:27 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:05:15 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -1925,12 +1925,12 @@ Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1272)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:05:15 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:05:15 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:08:48 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -1941,13 +1941,13 @@ Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 4505)
 
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:08:48 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
+
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:08:48 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:09:41 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -1959,12 +1959,12 @@ Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 4485)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:09:41 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:09:41 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:11:05 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -1976,12 +1976,12 @@ Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 4512)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:11:05 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:11:05 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:11:17 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -1993,12 +1993,12 @@ Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 4491)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:11:17 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:11:17 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:11:45 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2010,12 +2010,12 @@ Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 4491)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:11:46 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:11:46 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:12:26 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2027,12 +2027,12 @@ Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 4465)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:12:26 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:12:26 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:13:49 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2044,12 +2044,12 @@ Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 4491)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:13:49 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:13:49 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/trey/index.html" for 127.0.0.1 at 2023-11-28 16:13:59 -0600
 Processing by TreyController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2079,12 +2079,12 @@ Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 4495)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:14:45 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:14:45 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:15:57 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by HomeController#index as HTML
@@ -2097,12 +2097,12 @@ Completed 200 OK in 28ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 934
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:15:57 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:15:57 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:16:07 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2114,12 +2114,12 @@ Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1280)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:16:07 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:16:07 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:16:18 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by HomeController#index as HTML
@@ -2132,12 +2132,12 @@ Completed 200 OK in 21ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 933
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:16:18 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:16:18 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:17:06 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2149,12 +2149,12 @@ Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1289)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:17:06 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:17:06 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:17:07 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2166,12 +2166,12 @@ Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1283)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:17:07 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:17:07 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:17:08 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2183,12 +2183,12 @@ Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1281)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:17:08 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:17:08 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:17:08 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2200,12 +2200,12 @@ Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1286)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:17:08 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:17:08 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:17:09 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2217,12 +2217,12 @@ Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1270)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:17:09 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:17:09 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:17:09 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2234,12 +2234,12 @@ Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1268)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:17:09 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:17:09 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:17:18 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2251,12 +2251,12 @@ Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 1274)
 
 Started GET "/js/comments.js" for 127.0.0.1 at 2023-11-28 16:17:18 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:17:18 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/js/comments.js"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:18:15 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2268,15 +2268,15 @@ Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 4486)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:18:15 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:18:15 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:27:36 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -2289,7 +2289,7 @@ db/migrate/20231128222012_devise_create_users.rb
 
 
 ):
-  
+
 activerecord (7.1.2) lib/active_record/migration.rb:754:in `check_pending_migrations'
 activerecord (7.1.2) lib/active_record/migration.rb:643:in `block (2 levels) in call'
 activesupport (7.1.2) lib/active_support/file_update_checker.rb:85:in `execute'
@@ -2360,12 +2360,12 @@ Completed 200 OK in 23ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 962
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:28:02 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:28:02 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/charlie/index" for 127.0.0.1 at 2023-11-28 16:28:07 -0600
 Processing by CharlieController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2386,16 +2386,16 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 1374)
 
 
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/auth/register.html" for 127.0.0.1 at 2023-11-28 16:29:48 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/auth/register.html"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:30:06 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2407,17 +2407,17 @@ Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 1299)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:30:06 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:30:06 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/auth/register.html" for 127.0.0.1 at 2023-11-28 16:30:55 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActionController::RoutingError (No route matches [GET] "/auth/register.html"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:31:02 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2429,16 +2429,16 @@ Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 5767)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:31:02 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:31:02 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
+
 Started GET "/auth/login.html" for 127.0.0.1 at 2023-11-28 16:31:05 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/auth/login.html"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:31:07 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2450,16 +2450,16 @@ Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 1284)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:31:07 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:31:07 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
+
 Started GET "/auth/register.html" for 127.0.0.1 at 2023-11-28 16:32:49 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/auth/register.html"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:32:56 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2471,28 +2471,28 @@ Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 4456)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:32:56 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:32:56 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/registrations/new.html" for 127.0.0.1 at 2023-11-28 16:33:07 -0600
 Started GET "/registrations/new.html" for 127.0.0.1 at 2023-11-28 16:33:07 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/registrations/new.html"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/registrations/new.html"):
-  
+
 Started GET "/registrations/new.html" for 127.0.0.1 at 2023-11-28 16:33:47 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/registrations/new.html"):
-  
+
 Started GET "/registrations/new.html" for 127.0.0.1 at 2023-11-28 16:33:52 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/registrations/new.html"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:33:52 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2504,12 +2504,12 @@ Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 4465)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:33:52 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:33:52 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 16:33:53 -0600
 Processing by Devise::RegistrationsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -2523,12 +2523,12 @@ Completed 200 OK in 43ms (Views: 15.9ms | ActiveRecord: 2.3ms | Allocations: 187
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:33:56 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:33:56 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 16:33:57 -0600
 Processing by Devise::SessionsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -2541,12 +2541,12 @@ Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3736
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:33:59 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:33:59 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
+
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
   [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -2594,12 +2594,12 @@ Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 2683)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:39:24 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:39:24 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 16:39:42 -0600
 Processing by Devise::RegistrationsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -2633,12 +2633,12 @@ Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1375)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:39:54 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:39:54 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 16:40:02 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -2658,12 +2658,12 @@ Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1311)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:40:02 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:40:02 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 16:40:04 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -2683,12 +2683,12 @@ Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 1326)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:40:04 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:40:04 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 16:40:05 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -2708,12 +2708,12 @@ Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1289)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:40:05 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:40:05 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 16:40:05 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -2733,12 +2733,12 @@ Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1295)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:40:05 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:40:05 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 16:40:06 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -2758,12 +2758,12 @@ Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1316)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:40:06 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:40:06 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 16:40:06 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -2783,12 +2783,12 @@ Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1322)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:40:06 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:40:06 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 16:40:17 -0600
 Processing by Devise::RegistrationsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -2808,12 +2808,12 @@ Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1317)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:40:17 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:40:17 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 16:40:18 -0600
 Processing by Devise::RegistrationsController#new as HTML
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -2833,12 +2833,12 @@ Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 1325)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:40:18 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:40:18 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 16:40:23 -0600
 Processing by TreyController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -2859,12 +2859,12 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 1371)
 
 
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 16:41:11 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by HomeController#index as HTML
@@ -2877,12 +2877,12 @@ Completed 200 OK in 27ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 966
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:41:11 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:41:11 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 16:41:12 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -2902,12 +2902,12 @@ Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1313)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:41:12 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:41:12 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 16:41:13 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -2927,12 +2927,12 @@ Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1327)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:41:13 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:41:13 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 16:41:14 -0600
 Processing by Devise::RegistrationsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -2952,12 +2952,12 @@ Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1304)
 
 Started GET "/javascript/comments.js" for 127.0.0.1 at 2023-11-28 16:41:14 -0600
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 16:41:14 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/javascript/comments.js"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -3011,9 +3011,9 @@ Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2371)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:07:48 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:07:57 -0600
 Processing by Devise::SessionsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -3069,9 +3069,9 @@ Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2096)
 
 
 Started GET "/users/" for 127.0.0.1 at 2023-11-28 22:08:12 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/users"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 22:08:15 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -3082,9 +3082,9 @@ Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1222)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:08:15 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 22:08:21 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -3095,9 +3095,9 @@ Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1236)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:08:21 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:08:25 -0600
 Processing by Devise::SessionsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -3135,9 +3135,9 @@ Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1249)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:08:39 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 22:08:40 -0600
 Processing by Devise::RegistrationsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -3172,9 +3172,9 @@ Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 2123)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:08:48 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 22:08:52 -0600
 Processing by TreyController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -3185,9 +3185,9 @@ Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1045)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:08:55 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:08:58 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3208,9 +3208,9 @@ Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 1938)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:08:58 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:08:58 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3231,9 +3231,9 @@ Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms | Allocations: 1934)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:08:58 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:08:58 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3254,9 +3254,9 @@ Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 1934)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:08:58 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:08:59 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3277,9 +3277,9 @@ Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms | Allocations: 1932)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:08:59 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:08:59 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3300,9 +3300,9 @@ Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 1940)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:08:59 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 22:08:59 -0600
 Processing by Devise::RegistrationsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3323,9 +3323,9 @@ Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.1ms | Allocations: 1949)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:08:59 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 22:08:59 -0600
 Processing by Devise::RegistrationsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3346,9 +3346,9 @@ Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 1937)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:09:00 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 22:09:00 -0600
 Processing by Devise::RegistrationsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3369,9 +3369,9 @@ Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 1934)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:09:00 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 22:09:00 -0600
 Processing by Devise::RegistrationsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3392,9 +3392,9 @@ Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 1937)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:09:00 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 22:09:00 -0600
 Processing by Devise::RegistrationsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3415,9 +3415,9 @@ Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.1ms | Allocations: 1922)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:09:00 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 22:14:09 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -3430,9 +3430,9 @@ Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 2.2ms | Allocations: 9453
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:14:10 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:14:13 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3453,9 +3453,9 @@ Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 1947)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:14:13 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:14:14 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3476,9 +3476,9 @@ Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.1ms | Allocations: 1989)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:14:14 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 22:14:19 -0600
 Processing by TreyController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -3498,9 +3498,9 @@ Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1070)
 
 
 Started GET "/trey/auth/register.html" for 127.0.0.1 at 2023-11-28 22:14:24 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/trey/auth/register.html"):
-  
+
 Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 22:14:26 -0600
 Processing by TreyController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -3522,9 +3522,9 @@ Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 1976)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:14:28 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 22:14:38 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by HomeController#index as HTML
@@ -3538,9 +3538,9 @@ Completed 200 OK in 60ms (Views: 48.2ms | ActiveRecord: 2.3ms | Allocations: 263
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:14:38 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:14:40 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3561,9 +3561,9 @@ Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 1966)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:14:40 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:14:41 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3584,9 +3584,9 @@ Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 1994)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:14:41 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:14:41 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3607,9 +3607,9 @@ Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 1994)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:14:41 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:14:42 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3630,9 +3630,9 @@ Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 2001)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:14:42 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:14:42 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3653,9 +3653,9 @@ Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 1974)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:14:42 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 22:14:43 -0600
 Processing by Devise::RegistrationsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3676,9 +3676,9 @@ Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 1958)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:14:43 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 22:14:43 -0600
 Processing by Devise::RegistrationsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3699,9 +3699,9 @@ Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 1953)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:14:43 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 22:14:44 -0600
 Processing by Devise::RegistrationsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3722,12 +3722,12 @@ Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 1965)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:14:44 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 22:23:10 -0600
   [1m[36mActiveRecord::SchemaMigration Load (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -3741,7 +3741,7 @@ db/migrate/20231128222012_devise_create_users.rb
 
 
 ):
-  
+
 activerecord (7.1.2) lib/active_record/migration.rb:754:in `check_pending_migrations'
 activerecord (7.1.2) lib/active_record/migration.rb:643:in `block (2 levels) in call'
 activesupport (7.1.2) lib/active_support/file_update_checker.rb:85:in `execute'
@@ -3814,9 +3814,9 @@ Completed 200 OK in 22788ms (Views: 22548.2ms | ActiveRecord: 0.0ms | Allocation
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:24:48 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:24:50 -0600
 Processing by Devise::SessionsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -3839,9 +3839,9 @@ Completed 200 OK in 265ms (Views: 231.8ms | ActiveRecord: 0.0ms | Allocations: 4
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:25:02 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 22:25:19 -0600
 Processing by Devise::RegistrationsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -3885,13 +3885,13 @@ Completed 200 OK in 1328ms (Views: 1278.9ms | ActiveRecord: 0.0ms | Allocations:
 
 
 Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:25:55 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
-  
+
 Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:27:20 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 22:44:05 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by HomeController#index as HTML
@@ -3905,22 +3905,22 @@ Completed 200 OK in 62ms (Views: 48.9ms | ActiveRecord: 2.5ms | Allocations: 265
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:44:05 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:44:07 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
-  
+
 Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:47:47 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
-  
+
 Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:51:06 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:51:09 -0600
 Processing by Devise::SessionsController#new as HTML
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -3941,9 +3941,9 @@ Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.1ms | Allocations: 6569
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:51:09 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 22:51:11 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -3956,9 +3956,9 @@ Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms | Allocations: 2097)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:51:11 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 22:51:54 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -3971,13 +3971,13 @@ Completed 200 OK in 17ms (Views: 13.6ms | ActiveRecord: 2.2ms | Allocations: 964
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:51:54 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:51:55 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 22:53:20 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -3988,9 +3988,9 @@ Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 1517)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:53:20 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 22:53:22 -0600
 Processing by Devise::SessionsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -4021,13 +4021,13 @@ Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 2110)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:53:24 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:53:26 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 22:55:16 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by HomeController#index as HTML
@@ -4041,13 +4041,13 @@ Completed 200 OK in 49ms (Views: 41.0ms | ActiveRecord: 2.3ms | Allocations: 265
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:55:16 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:55:18 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 22:58:30 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -4060,13 +4060,13 @@ Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 2.1ms | Allocations: 965
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 22:58:30 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 22:58:38 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-28 23:01:22 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by HomeController#index as HTML
@@ -4080,13 +4080,13 @@ Completed 200 OK in 69ms (Views: 57.1ms | ActiveRecord: 2.9ms | Allocations: 265
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 23:01:22 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_out" for 127.0.0.1 at 2023-11-28 23:01:24 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
-  
+
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
   [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -4124,9 +4124,9 @@ Completed 200 OK in 51ms (Views: 39.6ms | ActiveRecord: 3.3ms | Allocations: 151
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 23:04:11 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-28 23:04:15 -0600
 Processing by Devise::RegistrationsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -4161,9 +4161,9 @@ Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms | Allocations: 2201)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 23:04:25 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started DELETE "/users/sign_out" for 127.0.0.1 at 2023-11-28 23:04:28 -0600
 Processing by Devise::SessionsController#destroy as TURBO_STREAM
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
@@ -4181,9 +4181,9 @@ Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1538)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 23:04:28 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-28 23:04:33 -0600
 Processing by Devise::SessionsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -4214,9 +4214,9 @@ Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 2054)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-28 23:04:35 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/trey/index" for 127.0.0.1 at 2023-11-28 23:04:39 -0600
 Processing by TreyController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -4239,9 +4239,9 @@ Completed 200 OK in 69ms (Views: 54.6ms | ActiveRecord: 2.1ms | Allocations: 268
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 00:00:11 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/trey/index" for 127.0.0.1 at 2023-11-29 00:00:17 -0600
 Processing by TreyController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -4259,9 +4259,9 @@ Processing by CommentsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1057)
 
 
-  
+
 NoMethodError (undefined method `permit' for "test":String):
-  
+
 app/controllers/comments_controller.rb:16:in `comment_params'
 app/controllers/comments_controller.rb:5:in `create'
 Started GET "/" for 127.0.0.1 at 2023-11-29 00:02:33 -0600
@@ -4287,9 +4287,9 @@ Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.1ms | Allocations: 223
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 00:02:33 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 00:03:01 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -4302,9 +4302,9 @@ Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 1.5ms | Allocations: 995
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 00:03:01 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 00:06:46 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -4317,9 +4317,9 @@ Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 1.6ms | Allocations: 991
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 00:06:47 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 00:06:53 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>"testing"}
@@ -4327,9 +4327,9 @@ Processing by CommentsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 3207)
 
 
-  
+
 NoMethodError (undefined method `comments' for #<User id: 1, email: "treyeck2@gmail.com", created_at: "2023-11-29 05:04:25.414355000 +0000", updated_at: "2023-11-29 05:29:29.416890000 +0000">):
-  
+
 app/controllers/comments_controller.rb:5:in `create'
   [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -4385,9 +4385,9 @@ Completed 200 OK in 62ms (Views: 50.3ms | ActiveRecord: 1.7ms | Allocations: 268
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 00:08:55 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 00:09:01 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>"testing"}
@@ -4395,9 +4395,9 @@ Processing by CommentsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3247)
 
 
-  
+
 NoMethodError (undefined method `comments' for #<User id: 1, email: "treyeck2@gmail.com", created_at: "2023-11-29 05:04:25.414355000 +0000", updated_at: "2023-11-29 05:29:29.416890000 +0000">):
-  
+
 app/controllers/comments_controller.rb:5:in `create'
 Started GET "/" for 127.0.0.1 at 2023-11-29 00:10:06 -0600
 Processing by HomeController#index as HTML
@@ -4411,9 +4411,9 @@ Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 1.6ms | Allocations: 992
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 00:10:07 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 00:10:17 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>"testing"}
@@ -4421,9 +4421,9 @@ Processing by CommentsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.3ms | Allocations: 8332)
 
 
-  
+
 NoMethodError (undefined method `permit' for "testing":String):
-  
+
 app/controllers/comments_controller.rb:17:in `comment_params'
 app/controllers/comments_controller.rb:5:in `create'
 Started GET "/" for 127.0.0.1 at 2023-11-29 00:11:01 -0600
@@ -4438,9 +4438,9 @@ Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms | Allocations: 2253)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 00:11:01 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 10:45:20 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -4453,9 +4453,9 @@ Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 3.9ms | Allocations: 2519)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 10:45:20 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 10:46:29 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -4468,9 +4468,9 @@ Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.1ms | Allocations: 222
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 10:46:30 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/trey/index" for 127.0.0.1 at 2023-11-29 10:46:34 -0600
 Processing by TreyController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -4501,9 +4501,9 @@ Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1558)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 10:49:36 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 10:50:27 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -4514,9 +4514,9 @@ Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1558)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 10:50:27 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
   [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -4533,9 +4533,9 @@ Completed 200 OK in 95ms (Views: 79.0ms | ActiveRecord: 2.8ms | Allocations: 262
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 11:35:29 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-29 11:35:33 -0600
 Processing by Devise::SessionsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -4573,9 +4573,9 @@ Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 1564)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 11:35:48 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-29 11:35:50 -0600
 Processing by Devise::RegistrationsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -4650,9 +4650,9 @@ Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1533)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 11:37:15 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_up" for 127.0.0.1 at 2023-11-29 11:37:17 -0600
 Processing by Devise::RegistrationsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -4687,9 +4687,9 @@ Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 2329)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 11:37:26 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 11:37:44 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>"test"}
@@ -4697,9 +4697,9 @@ Processing by CommentsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms | Allocations: 4463)
 
 
-  
+
 NoMethodError (undefined method `permit' for "test":String):
-  
+
 app/controllers/comments_controller.rb:17:in `comment_params'
 app/controllers/comments_controller.rb:5:in `create'
 Started GET "/" for 127.0.0.1 at 2023-11-29 11:39:47 -0600
@@ -4714,9 +4714,9 @@ Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 2.1ms | Allocations: 987
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 11:39:47 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 11:39:53 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"content"=>"testing"}}
@@ -4769,9 +4769,9 @@ Completed 200 OK in 60ms (Views: 48.0ms | ActiveRecord: 2.6ms | Allocations: 263
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 11:44:18 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 11:44:23 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"content"=>"testing"}}
@@ -4796,7 +4796,7 @@ Processing by HomeController#index as HTML
 Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.3ms | Allocations: 8791)
 
 
-  
+
 ActionView::Template::Error (undefined method `each' for nil:NilClass):
     110:     <% if user_signed_in? %>
     111:       <h2>Comments</h2>
@@ -4805,7 +4805,7 @@ ActionView::Template::Error (undefined method `each' for nil:NilClass):
     114:           <li><strong><%= comment.user.email %>:</strong> <%= comment.content %></li>
     115:         <% end %>
     116:       </ul>
-  
+
 app/views/home/index.html.erb:113
 Started GET "/" for 127.0.0.1 at 2023-11-29 11:48:08 -0600
 Processing by HomeController#index as HTML
@@ -4818,7 +4818,7 @@ Processing by HomeController#index as HTML
 Completed 500 Internal Server Error in 22ms (ActiveRecord: 2.6ms | Allocations: 8774)
 
 
-  
+
 ActionView::Template::Error (undefined method `each' for nil:NilClass):
     110:     <% if user_signed_in? %>
     111:       <h2>Comments</h2>
@@ -4827,7 +4827,7 @@ ActionView::Template::Error (undefined method `each' for nil:NilClass):
     114:           <li><strong><%= comment.user.email %>:</strong> <%= comment.content %></li>
     115:         <% end %>
     116:       </ul>
-  
+
 app/views/home/index.html.erb:113
 Started GET "/" for 127.0.0.1 at 2023-11-29 11:49:38 -0600
 Processing by HomeController#index as HTML
@@ -4840,7 +4840,7 @@ Processing by HomeController#index as HTML
 Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.2ms | Allocations: 8784)
 
 
-  
+
 ActionView::Template::Error (undefined method `each' for nil:NilClass):
     110:     <% if user_signed_in? %>
     111:       <h2>Comments</h2>
@@ -4849,7 +4849,7 @@ ActionView::Template::Error (undefined method `each' for nil:NilClass):
     114:           <li><strong><%= comment.user.email %>:</strong> <%= comment.content %></li>
     115:         <% end %>
     116:       </ul>
-  
+
 app/views/home/index.html.erb:113
 Started GET "/" for 127.0.0.1 at 2023-11-29 11:54:36 -0600
 Processing by HomeController#index as HTML
@@ -4863,9 +4863,9 @@ Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 2.2ms | Allocations: 1003
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 11:54:37 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 11:54:42 -0600
 Processing by CommentsController#create as HTML
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>""}
@@ -4873,9 +4873,9 @@ Processing by CommentsController#create as HTML
 Completed 400 Bad Request in 9ms (ActiveRecord: 0.4ms | Allocations: 4001)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: comment):
-  
+
 app/controllers/comments_controller.rb:18:in `comment_params'
 app/controllers/comments_controller.rb:5:in `create'
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 11:55:03 -0600
@@ -4885,9 +4885,9 @@ Processing by CommentsController#create as HTML
 Completed 400 Bad Request in 11ms (ActiveRecord: 2.4ms | Allocations: 8180)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: content):
-  
+
 app/controllers/comments_controller.rb:18:in `comment_params'
 app/controllers/comments_controller.rb:5:in `create'
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 11:55:24 -0600
@@ -4897,9 +4897,9 @@ Processing by CommentsController#create as HTML
 Completed 400 Bad Request in 3ms (ActiveRecord: 0.1ms | Allocations: 1932)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: content):
-  
+
 app/controllers/comments_controller.rb:18:in `comment_params'
 app/controllers/comments_controller.rb:5:in `create'
 Started GET "/" for 127.0.0.1 at 2023-11-29 11:55:27 -0600
@@ -4914,9 +4914,9 @@ Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 5780
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 11:55:27 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 11:55:32 -0600
 Processing by CommentsController#create as HTML
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>""}
@@ -4924,9 +4924,9 @@ Processing by CommentsController#create as HTML
 Completed 400 Bad Request in 3ms (ActiveRecord: 0.1ms | Allocations: 1942)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: content):
-  
+
 app/controllers/comments_controller.rb:18:in `comment_params'
 app/controllers/comments_controller.rb:5:in `create'
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 11:56:49 -0600
@@ -4936,9 +4936,9 @@ Processing by CommentsController#create as HTML
 Completed 400 Bad Request in 11ms (ActiveRecord: 2.3ms | Allocations: 8154)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: comment):
-  
+
 app/controllers/comments_controller.rb:18:in `comment_params'
 app/controllers/comments_controller.rb:5:in `create'
 Started GET "/" for 127.0.0.1 at 2023-11-29 11:56:52 -0600
@@ -4953,9 +4953,9 @@ Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.1ms | Allocations: 5793)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 11:56:52 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 11:57:55 -0600
 Processing by CommentsController#create as HTML
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>""}
@@ -4963,9 +4963,9 @@ Processing by CommentsController#create as HTML
 Completed 400 Bad Request in 11ms (ActiveRecord: 2.2ms | Allocations: 8136)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: comment):
-  
+
 app/controllers/comments_controller.rb:18:in `comment_params'
 app/controllers/comments_controller.rb:5:in `create'
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 11:58:32 -0600
@@ -4975,9 +4975,9 @@ Processing by CommentsController#create as HTML
 Completed 400 Bad Request in 12ms (ActiveRecord: 2.5ms | Allocations: 8136)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: comment):
-  
+
 app/controllers/comments_controller.rb:18:in `comment_params'
 app/controllers/comments_controller.rb:5:in `create'
 Started GET "/" for 127.0.0.1 at 2023-11-29 11:58:34 -0600
@@ -4992,9 +4992,9 @@ Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 5628)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 11:58:35 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 11:58:43 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"content"=>"test 1"}}
@@ -5033,9 +5033,9 @@ Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.1ms | Allocations: 2204)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 12:00:37 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 12:01:52 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -5048,9 +5048,9 @@ Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 1.5ms | Allocations: 9964
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 12:01:53 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 12:02:00 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"content"=>"test 4"}}
@@ -5076,9 +5076,9 @@ Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 1.8ms | Allocations: 9940
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 12:04:21 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 12:04:26 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"content"=>"test 5"}}
@@ -5105,9 +5105,9 @@ Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 1.5ms | Allocations: 993
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 12:04:41 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 12:06:41 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -5120,9 +5120,9 @@ Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 2213)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 12:06:41 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 12:08:30 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -5135,9 +5135,9 @@ Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 1.8ms | Allocations: 9955
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 12:08:30 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 12:14:46 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -5150,12 +5150,12 @@ Processing by HomeController#index as HTML
 Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.1ms | Allocations: 8540)
 
 
-  
+
 ActionView::Template::Error (undefined method `each' for nil:NilClass):
     1: <% comments.each do |comment| %>
     2:   <li><%= comment.content %></li>
     3: <% end %>
-  
+
 app/views/home/_comments_list.html.erb:1
 app/views/home/index.html.erb:113
 Started GET "/" for 127.0.0.1 at 2023-11-29 12:15:10 -0600
@@ -5169,7 +5169,7 @@ Processing by HomeController#index as HTML
 Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.6ms | Allocations: 9016)
 
 
-  
+
 ActionView::Template::Error (Missing partial home/_comments_list, application/_comments_list with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
 
 Searched in:
@@ -5186,7 +5186,7 @@ Searched in:
     114:       </ul>
     115:       <div class="comment-form">
     116:         <h3>Leave a comment:</h3>
-  
+
 app/views/home/index.html.erb:113
 Started GET "/" for 127.0.0.1 at 2023-11-29 12:15:36 -0600
 Processing by HomeController#index as HTML
@@ -5199,7 +5199,7 @@ Processing by HomeController#index as HTML
 Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.7ms | Allocations: 8694)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `comments' for #<ActionView::Base:0x000000000509b0>):
     110:     <% if user_signed_in? %>
     111:       <h2>Comments</h2>
@@ -5208,7 +5208,7 @@ ActionView::Template::Error (undefined local variable or method `comments' for #
     114:           <li><%= comment.content %></li>
     115:         <% end %>
     116:       </ul>
-  
+
 app/views/home/index.html.erb:113
 Started GET "/" for 127.0.0.1 at 2023-11-29 12:15:45 -0600
 Processing by HomeController#index as HTML
@@ -5221,7 +5221,7 @@ Processing by HomeController#index as HTML
 Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.5ms | Allocations: 8725)
 
 
-  
+
 ActionView::Template::Error (undefined method `each' for nil:NilClass):
     110:     <% if user_signed_in? %>
     111:       <h2>Comments</h2>
@@ -5230,7 +5230,7 @@ ActionView::Template::Error (undefined method `each' for nil:NilClass):
     114:           <li><%= comment.content %></li>
     115:         <% end %>
     116:       </ul>
-  
+
 app/views/home/index.html.erb:113
 Started GET "/" for 127.0.0.1 at 2023-11-29 12:15:58 -0600
 Processing by HomeController#index as HTML
@@ -5244,9 +5244,9 @@ Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 1.6ms | Allocations: 992
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 12:15:58 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 12:16:19 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -5261,9 +5261,9 @@ Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 1.8ms | Allocations: 135
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 12:16:19 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 12:16:43 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -5290,9 +5290,9 @@ Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 1.9ms | Allocations: 179
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 12:16:43 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 12:16:50 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"content"=>"test 6"}}
@@ -5335,9 +5335,9 @@ Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 5974
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 12:16:53 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 12:17:09 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -5366,9 +5366,9 @@ Completed 200 OK in 49ms (Views: 46.5ms | ActiveRecord: 2.0ms | Allocations: 183
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 12:17:10 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 12:17:15 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"content"=>"test 7"}}
@@ -5427,9 +5427,9 @@ Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 693
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 12:17:18 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 13:28:50 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -5462,9 +5462,9 @@ Completed 200 OK in 59ms (Views: 54.3ms | ActiveRecord: 3.4ms | Allocations: 183
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 13:28:50 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 13:29:00 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"content"=>"bang bang"}}
@@ -5512,9 +5512,9 @@ Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.3ms | Allocations: 742
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 13:29:02 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 13:34:11 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -5527,7 +5527,7 @@ Processing by HomeController#index as HTML
 Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.3ms | Allocations: 10408)
 
 
-  
+
 ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
 
 Searched in:
@@ -5538,11 +5538,11 @@ Searched in:
   * "/Users/treyeckenrod/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.1.2/app/views"
 ):
     1: <!-- app/views/comments/_comment_list.html.erb -->
-    2: 
+    2:
     3: <ul id="commentList">
     4:   <%= render partial: 'comments/comment', collection: comments %>
     5: </ul>
-  
+
 app/views/comments/_comment_list.html.erb:4
 app/views/home/index.html.erb:112
 Started GET "/" for 127.0.0.1 at 2023-11-29 13:35:36 -0600
@@ -5582,9 +5582,9 @@ Completed 200 OK in 58ms (Views: 52.9ms | ActiveRecord: 3.9ms | Allocations: 216
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 13:35:36 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 13:35:51 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"authenticity_token"=>"[FILTERED]", "content"=>"test"}, "commit"=>"Submit"}
@@ -5640,9 +5640,9 @@ Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 2.7ms | Allocations: 211
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 13:36:23 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 13:36:30 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"authenticity_token"=>"[FILTERED]", "content"=>"boooooooooo"}, "commit"=>"Submit"}
@@ -5678,9 +5678,9 @@ Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 2.1ms | Allocations: 144
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 13:37:40 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 13:37:44 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"authenticity_token"=>"[FILTERED]", "content"=>"bing"}, "commit"=>"Submit"}
@@ -5716,9 +5716,9 @@ Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 1707)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 13:37:50 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-29 13:38:09 -0600
 Processing by Devise::SessionsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -5756,9 +5756,9 @@ Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.3ms | Allocations: 487
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 13:38:12 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 13:38:17 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"authenticity_token"=>"[FILTERED]", "content"=>"yessir"}, "commit"=>"Submit"}
@@ -5871,9 +5871,9 @@ Completed 200 OK in 74ms (Views: 71.3ms | ActiveRecord: 0.8ms | Allocations: 582
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 13:59:56 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/trey/index" for 127.0.0.1 at 2023-11-29 14:00:03 -0600
 Processing by TreyController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -5957,9 +5957,9 @@ Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 14:00:20 -0600
 Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.4ms | Allocations: 5920)
 
 
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 14:10:21 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -5983,9 +5983,9 @@ Completed 200 OK in 52ms (Views: 49.1ms | ActiveRecord: 1.9ms | Allocations: 173
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 14:10:21 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 14:10:50 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -6003,9 +6003,9 @@ Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 3058)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 14:10:50 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started POST "/comments" for 127.0.0.1 at 2023-11-29 14:11:07 -0600
 Processing by CommentsController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"page"=>"home", "content"=>"this is the home page"}, "commit"=>"Submit"}
@@ -6073,9 +6073,9 @@ Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 3055
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 14:11:27 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/trey/index" for 127.0.0.1 at 2023-11-29 14:11:35 -0600
 Processing by TreyController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -6125,9 +6125,9 @@ Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 4276)
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 14:13:32 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 14:15:31 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -6145,9 +6145,9 @@ Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 1.9ms | Allocations: 148
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 14:15:31 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/" for 127.0.0.1 at 2023-11-29 14:17:38 -0600
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -6165,9 +6165,9 @@ Completed 200 OK in 24ms (Views: 19.9ms | ActiveRecord: 2.8ms | Allocations: 148
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 14:17:39 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
 Started GET "/trey/index" for 127.0.0.1 at 2023-11-29 14:17:42 -0600
 Processing by TreyController#index as HTML
   Rendering layout layouts/application.html.erb
@@ -6223,6 +6223,6 @@ Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.4ms | Allocations: 486
 
 
 Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 14:18:38 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
-  
+
