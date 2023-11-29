@@ -112,15 +112,22 @@
     <section class="comments" id="comments">
       <h2>Comments</h2>
       <ul id="commentList">
-        <!-- Comments will be appended here -->
+        <% @comments.each do |comment| %>
+          <li>
+            <strong><%= comment.username %>:</strong>
+            <%= comment.comment %>
+          </li>
+        <% end %>
       </ul>
       <div class="comment-form">
-        <h3>Leave a comment:</h3>
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" value="<%= current_user.email.split('@')[0] %>" readonly><br>
-        <label for="comment">Comment:</label><br>
-        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
-        <button onclick="submitComment()">Submit</button>
+        <%= form_with(url: comments_path, method: "post", remote: true) do |form| %>
+          <h3>Leave a comment:</h3>
+          <%= form.label :username, "Username:" %><br>
+          <%= form.text_field :username, value: current_user.email.split('@')[0], readonly: true %><br>
+          <%= form.label :comment, "Comment:" %><br>
+          <%= form.text_area :comment, rows: 4, cols: 50 %><br><br>
+          <%= form.submit "Submit" %>
+        <% end %>
       </div>
     </section>
   <% end %>
