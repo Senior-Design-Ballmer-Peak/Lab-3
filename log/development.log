@@ -1838,3 +1838,16 @@ Processing by TristanController#index as HTML
 Completed 200 OK in 256ms (Views: 205.9ms | ActiveRecord: 0.0ms | Allocations: 3668)
 
 
+Started GET "/tristan/index" for 127.0.0.1 at 2023-11-28 23:33:13 -0600
+Processing by TristanController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tristan/index.html.erb within layouts/application
+  Rendered tristan/index.html.erb within layouts/application (Duration: 275.1ms | Allocations: 2532)
+  Rendered layout layouts/application.html.erb (Duration: 895.4ms | Allocations: 19037)
+Completed 200 OK in 942ms (Views: 909.9ms | ActiveRecord: 0.0ms | Allocations: 19941)
+
+
+Started GET "/tristanImages/herzog-intern-team.jpeg" for 127.0.0.1 at 2023-11-28 23:33:22 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/tristanImages/herzog-intern-team.jpeg"):
+  
