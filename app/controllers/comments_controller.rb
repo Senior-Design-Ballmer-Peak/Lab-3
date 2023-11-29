@@ -17,6 +17,10 @@ class CommentsController < ApplicationController
   private
 
   def comment_params
-    params.require(:comment).permit(:content)
+    params.require(:comment).permit(:content, :page)
+  end
+
+  def show
+    @page = controller_name
   end
 end
