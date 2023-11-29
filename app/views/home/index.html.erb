@@ -109,7 +109,7 @@
   <section class="comments" id="comments">
     <% if user_signed_in? %>
       <h2>Comments</h2>
-      <%= render 'comments/comment_list', comments: Comment.order(created_at: :desc).limit(10) %>
+      <%= render 'comments/comment_list', comments: Comment.where(page: 'home').order(created_at: :desc).limit(10) %>
       <div class="comment-form" id="commentForm">
         <%= render 'comments/form', comment: Comment.new %>
       </div>

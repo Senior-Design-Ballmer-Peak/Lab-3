@@ -151,18 +151,9 @@
   <section class="comments" id="comments">
     <% if user_signed_in? %>
       <h2>Comments</h2>
-      <ul id="commentList">
-        <!-- Comments will be appended here -->
-      </ul>
-      <div class="comment-form">
-        <h3>Leave a comment:</h3>
-        <%= form_tag(comments_path, method: :post, remote: true) do %>
-          <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-          <label for="name">Name: <%= current_user.email %></label><br>
-          <label for="comment">Comment:</label><br>
-          <textarea id="content" name="content" rows="4" cols="50"></textarea><br><br>
-          <button type="submit">Submit</button>
-        <% end %>
+      <%= render 'comments/comment_list', comments: Comment.where(page: 'trey').order(created_at: :desc).limit(10) %>
+      <div class="comment-form" id="commentForm">
+        <%= render 'comments/form', comment: Comment.new %>
       </div>
     <% end %>
   </section>
