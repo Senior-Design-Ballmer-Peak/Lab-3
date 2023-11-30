@@ -22,13 +22,12 @@
 <main style="width: 100%; max-width: 800px; box-sizing: border-box; margin: 0 auto; text-align: center;">
   <section class="introduction">
     <h2>About Me</h2>
-    <p> Driven student eager to gain experience in software engineering as I
-      enter the workforce as a New Grad in May of 2024. Mobile
-      development and backend software are my two largest areas of
-      interest. I am technology driven and love to learn new languages,
-      frameworks, and more. Organization and communication are two areas
-      I pride myself on. In my free time I enjoy disc golfing, basketball, hiking,
-      building custom mechanical keyboards, 3D printing, and cooking. </p>
+    <p> I am a student at the University of Iowa, studying Computer
+      Science and Engineering. Mobile development and backend software
+      are my two largest areas of interest. I am technology driven and
+      love to learn new languages, frameworks, and more. In my free time
+      I enjoy disc golfing, basketball, hiking, building custom mechanical
+      keyboards, 3D printing, cooking, and much more. </p>
   </section>
 
   <section class="iowa">
@@ -36,7 +35,7 @@
     <div><%= image_tag 'treysImages/hurkey.jpeg', alt: 'Trey next to Hurkey', class: 'feature-image' %></div>
     <h2>University of Iowa</h2>
     <p> Computer Science and Engineering </p>
-    <p> Epected Graduation: May 2024 </p>
+    <p> Expected Graduation: May 2024 </p>
   </section>
 
   <section class="udemy">
@@ -83,7 +82,12 @@
     </div>
     <div class="project">
       <h3> Remote Controlled Crane Embedded Systems Project </h3>
-      <p>  </p>
+      <p> <%= image_tag 'treysImages/crane.png', alt: 'RC Crane', class: 'feature-image' %></p>
+      <p> For an embedded systems class, my partner and I developed a remote control
+        crane from the ground up using C on an Arduino Uno, along with multiple physical
+        components that came with our lab kit such as motors, ir receivers, ir transmitters,
+        and a remote. The body of the crane was designed from scratch using Autodesk Fusion 360
+        and printed on my Ender 3v2 Neo. </p>
     </div>
   </section>
 
@@ -134,7 +138,6 @@
     <p><%= image_tag 'treysImages/basketball.jpeg', alt: 'Trey playing basketball in high school', class: 'feature-image' %></p>
     <p><%= image_tag 'treysImages/bulls.jpeg', alt: 'Bulls Game', class: 'feature-image' %></p>
     <h2>Basketball</h2>
-    <p> Section Description </p>
   </section>
 
   <section class="outdoor">
@@ -149,7 +152,6 @@
       <div><%= image_tag 'treysImages/disc-golf.jpeg', alt: 'A photo at Brookwood Disc Golf Course in Waverly, Iowa', class: 'feature-image' %></div>
       <div><%= image_tag 'treysImages/ace.jpeg', alt: 'A photo of Trey\'s first ace, during a glow round at his home course', class: 'feature-image' %></div>
     </div>
-    <p> Section Description </p>
   </section>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
