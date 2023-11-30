@@ -21,5 +21,7 @@ test:
   database: storage/test.sqlite3
 
 production:
-  <<: *default
-  database: storage/production.pg
+  adapter: postgresql
+  encoding: unicode
+  url: <%= ENV['postgres://fwblrlfjgefogg:d5a4576d0bfc5469c61d1ae30ba4429834fd328dd0672f33fc304fa6d9d083fd@ec2-54-243-32-226.compute-1.amazonaws.com:5432/da1h5o8uq8p6q4'] %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
