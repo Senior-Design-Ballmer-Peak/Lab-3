@@ -115,3 +115,9 @@ h1 {
     margin: 0 auto; /* to center the image */
     display: block; /* add this line */
 }
+
+.hobby-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
