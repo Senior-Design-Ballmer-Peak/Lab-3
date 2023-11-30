@@ -6226,3 +6226,103 @@ Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 14:18:38 -0600
   
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
   
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-30 15:44:58 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 703.9ms | Allocations: 167858)
+  Rendered layout layouts/application.html.erb (Duration: 706.6ms | Allocations: 170154)
+Completed 200 OK in 759ms (Views: 721.9ms | ActiveRecord: 0.0ms | Allocations: 178915)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-30 15:49:14 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 23.6ms | Allocations: 6239)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 8536)
+Completed 200 OK in 38ms (Views: 30.3ms | ActiveRecord: 0.0ms | Allocations: 12882)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-30 15:50:20 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1446)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1858)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2108)
+
+
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-30 15:50:29 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1426)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1838)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2091)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-30 15:50:29 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1894)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2305)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 2778)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-30 15:50:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-30 15:50:56 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 3544)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 5775)
+Completed 200 OK in 37ms (Views: 29.5ms | ActiveRecord: 0.0ms | Allocations: 10121)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-30 15:50:56 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-30 15:51:04 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 877)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1288)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1543)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-30 15:51:04 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-30 15:51:06 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 892)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1303)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 1556)
+
+
+Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-30 15:51:06 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/trey/index" for 127.0.0.1 at 2023-11-30 15:51:07 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  Rendered trey/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3056)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3479)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 3955)
+
+
