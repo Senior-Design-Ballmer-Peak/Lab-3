@@ -104,10 +104,11 @@
     </div>
   </section>
 
-
+  <div id="team-map" style="height: 400px;"></div>
 
   <section class="comments" id="comments">
     <% if user_signed_in? %>
+      <div id="team-map" style="height: 400px;"></div>
       <h2>Comments</h2>
       <%= render 'comments/comment_list', comments: Comment.where(page: 'home').order(created_at: :desc).limit(10) %>
       <div class="comment-form" id="commentForm">
@@ -116,6 +117,23 @@
     <% end %>
   </section>
 </main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var map = L.map('team-map').setView([20, 0], 2); // Set a default view
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        <% @team_members.each do |member| %>
+        <% if member.latitude && member.longitude %>
+        var marker = L.marker([<%= member.latitude %>, <%= member.longitude %>]).addTo(map);
+        marker.bindPopup("<strong><%= member.name %></strong><br><%= member.hometown %>");
+        <% end %>
+        <% end %>
+    });
+</script>
 
 <footer>
   <p>© 2023 Ballmer Peak Portfolio</p>
