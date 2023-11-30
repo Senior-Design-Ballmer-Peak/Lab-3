@@ -6226,3 +6226,143 @@ Started GET "/images/mountain.jpeg" for 127.0.0.1 at 2023-11-29 14:18:38 -0600
   
 ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
   
+Started GET "/" for ::1 at 2023-11-30 17:23:03 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 4770)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 7001)
+Completed 200 OK in 23ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 11722)
+
+
+Started GET "/images/mountain.jpeg" for ::1 at 2023-11-30 17:23:03 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 17:23:13 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 689)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 174.7ms | Allocations: 50282)
+  Rendered layout layouts/application.html.erb (Duration: 175.2ms | Allocations: 50718)
+Completed 200 OK in 200ms (Views: 178.1ms | ActiveRecord: 2.4ms | Allocations: 64584)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-11-30 17:23:15 -0600
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"treyeck2222@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "treyeck2222@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.1ms | Allocations: 4591)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"treyeck2222@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 227)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1897)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2308)
+Completed 200 OK in 216ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3356)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-11-30 17:23:18 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 220)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2636)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3047)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3952)
+
+
+Started POST "/users" for ::1 at 2023-11-30 17:23:39 -0600
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tres@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tres@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.6ms | Allocations: 478)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 127)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2790)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3201)
+Completed 422 Unprocessable Entity in 221ms (Views: 9.7ms | ActiveRecord: 1.1ms | Allocations: 9125)
+
+
+Started POST "/users" for ::1 at 2023-11-30 17:23:49 -0600
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tres@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tres@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["email", "tres@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2023-11-30 23:23:49.696055"], ["updated_at", "2023-11-30 23:23:49.696055"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 221ms (ActiveRecord: 2.2ms | Allocations: 7308)
+
+
+Started GET "/" for ::1 at 2023-11-30 17:23:49 -0600
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."page" = ? ORDER BY "comments"."created_at" DESC LIMIT ?[0m  [["page", "home"], ["LIMIT", 10]]
+  ↳ app/views/comments/_comment_list.html.erb:4
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:3
+  Rendered collection of comments/_comment.html.erb [1 times] (Duration: 6.3ms | Allocations: 3380)
+  Rendered comments/_comment_list.html.erb (Duration: 15.6ms | Allocations: 9410)
+  Rendered comments/_form.html.erb (Duration: 2.2ms | Allocations: 668)
+  Rendered home/index.html.erb within layouts/application (Duration: 38.4ms | Allocations: 21218)
+  Rendered layout layouts/application.html.erb (Duration: 39.0ms | Allocations: 21629)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.8ms | Allocations: 21928)
+
+
+Started GET "/images/mountain.jpeg" for ::1 at 2023-11-30 17:23:49 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/mountain.jpeg"):
+  
+Started GET "/trey/index" for ::1 at 2023-11-30 17:23:51 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."page" = ? ORDER BY "comments"."created_at" DESC LIMIT ?[0m  [["page", "trey"], ["LIMIT", 10]]
+  ↳ app/views/comments/_comment_list.html.erb:4
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:3
+  Rendered collection of comments/_comment.html.erb [1 times] (Duration: 1.6ms | Allocations: 544)
+  Rendered comments/_comment_list.html.erb (Duration: 2.8ms | Allocations: 1127)
+  Rendered comments/_form.html.erb (Duration: 0.9ms | Allocations: 226)
+  Rendered trey/index.html.erb within layouts/application (Duration: 46.5ms | Allocations: 22509)
+  Rendered layout layouts/application.html.erb (Duration: 47.4ms | Allocations: 22921)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.5ms | Allocations: 23399)
+
+
+Started GET "/pdfs/AIMLpaper.pdf" for ::1 at 2023-11-30 17:23:52 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/pdfs/AIMLpaper.pdf"):
+  
+Started GET "/trey/index" for ::1 at 2023-11-30 17:28:24 -0600
+Processing by TreyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trey/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:2:in `user_signed_in?'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."page" = ? ORDER BY "comments"."created_at" DESC LIMIT ?[0m  [["page", "trey"], ["LIMIT", 10]]
+  ↳ app/views/comments/_comment_list.html.erb:4
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:3
+  Rendered collection of comments/_comment.html.erb [1 times] (Duration: 0.8ms | Allocations: 543)
+  Rendered comments/_comment_list.html.erb (Duration: 1.8ms | Allocations: 1126)
+  Rendered comments/_form.html.erb (Duration: 0.5ms | Allocations: 208)
+  Rendered trey/index.html.erb within layouts/application (Duration: 29.7ms | Allocations: 20238)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 20649)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.2ms | Allocations: 20898)
+
+
