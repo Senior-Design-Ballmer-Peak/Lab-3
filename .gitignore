@@ -67,3 +67,11 @@ yarn-debug.log*
 /storage/*
 !/storage/.keep
 /public/uploads
+storage/development.sqlite3
+storage/development.sqlite3-shm
+storage/development.sqlite3-wal
+tmp/cache/assets/sprockets/v4.0.0/2K/2Kqqs5CDZKeqQ8Zi3OcRThACYBsE09CB_YbQaG96080.cache
+tmp/cache/assets/sprockets/v4.0.0/9i/9iODiMhTi_l3uVuCHfHyk9eRmpqljEjQ0H8TUkrBBCM.cache
+tmp/cache/assets/sprockets/v4.0.0/bP/bP3163PxwZVQOujs8pY6U5CUbtzN-qwugrl_vXRe7UM.cache
+tmp/cache/assets/sprockets/v4.0.0/jE/jE8naJQC8LBy-gbNT-g-ygvqSqjt69w9k6c6X04lbpM.cache
+tmp/cache/bootsnap/compile-cache-iseq/2f/1be7130359cef2

@@ -1,2 +1,82 @@
-<h1>Tristan#index</h1>
-<p>Find me in app/views/tristan/index.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= "Tristan's Portfolio - Ballmer Peak Portfolio" %></title>
+  <%= stylesheet_link_tag 'tristanStyles', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<header>
+  <h1>Tristan's Portfolio</h1>
+  <nav>
+    <ul>
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'Login', 'auth/login.html' %></li>
+      <li><%= link_to 'Sign Up', 'auth/register.html' %></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="introduction">
+    <h2>About Me</h2>
+    <p class="limited-width"> Hey there, I'm Tristan, a student at the University of Iowa, majoring in computer science and engineering. My focus during my time here has been on delving into the world of embedded systems. It's an area that has captivated my interest, blending hardware and software intricacies to create efficient systems that power various technologies we use daily.
+      In my free time, I love immersing myself in a variety of hobbies that keep me engaged and excited. Among these, you'll often find me tinkering away with my 3D printer, turning ideas into tangible creations. I also cherish the serene moments spent hiking, where nature's beauty never fails to captivate me. And when winter arrives, I eagerly embrace the thrill of Nordic skiing, relishing the crisp air and the exhilaration of gliding through snow-covered landscapes.
+    </p>
+  </section>
+
+  <section class="internship">
+    <h2>Internship at Herzog</h2>
+    <%= image_tag 'tristanImages/herzog-intern-team.jpeg', alt: 'Summer 2023 interns at the Herzog Cedar Rapids office', class: 'feature-image small-image' %>
+    <p class="limited-width">Summer 2023 I worked as a Software Engineering Intern for Herzog Technologies Inc. I gained valuable experience working in a team and learning new technologies.</p>
+  </section>
+
+  <section class="teaching-assistant">
+    <h2>Undergraduate Teaching Assistant</h2>
+    <%= image_tag 'tristanImages/ta-teaching.jpg', alt: 'Teaching a lab about FPGAs', class: 'feature-image small-image' %>
+    <p class="limited-width">The past several semesters I have worked for the ECE department as a teaching assistant. I have TA'd for several classes including Digital Design, Computers in Engineering, and Intro to Engineering Computing.</p>
+  </section>
+
+  <section class="embedded-project">
+    <h2>Environmental Sensor</h2>
+    <%= image_tag 'tristanImages/Embedded-weather-station.jpg', alt: 'Breadboard with an LCD displaying the temperature and air quality', class: 'feature-image small-image' %>
+    <p class="limited-width">Myself and <%= link_to 'Charlie', charlie_index_path %> designed and implemented a fully functional environmental monitoring system, using an ATMega328p programmed using C.
+      The system monitored temperature, air quality, humidity, and pressure.</p>
+  </section>
+
+  <section class="hobbies">
+    <h2>Hobbies</h2>
+    <div class="hobby-images">
+      <%= image_tag 'tristanImages/hiking-missouri.jpg', alt: 'Hiking in Meramec State park in Missouri', class: 'feature-image small-image' %>
+      <%= image_tag 'tristanImages/my-3D-printer.jpg', alt: '3D printer (Sovol SV06)', class: 'feature-image small-image' %>
+      <%= image_tag 'tristanImages/north-shore-picture.jpg', alt: 'On the north shore of lake superior', class: 'feature-image small-image' %>
+    </div>
+
+    <p class="limited-width">My hobbies include spending time outside either hiking or skiing, and exploring the world of additive manufacturing with my 3D printer.</p>
+  </section>
+
+
+  <section class="comments" id="comments">
+    <% if user_signed_in? %>
+      <h2>Comments</h2>
+      <%= render 'comments/comment_list', comments: Comment.where(page: 'tristan').order(created_at: :desc).limit(10) %>
+      <div class="comment-form" id="commentForm">
+        <%= render 'comments/form', comment: Comment.new %>
+      </div>
+    <% end %>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to me for any inquiries or collaborations.</p>
+    <p>If I don't respond to your email I might have missed it, try messaging me on LinkedIn!</p>
+    <p>Email: <a href="mailto:tristan-pawlenty@uiowa.edu">tristan-pawlenty@uiowa.edu</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/tristan-pawlenty" target="_blank">tristan-pawlenty</a></p>
+  </section>
+</main>
+<footer>
+  <p>© <%= Time.now.year %> Ballmer Peak Portfolio</p>
+</footer>
+</body>
+</html>
