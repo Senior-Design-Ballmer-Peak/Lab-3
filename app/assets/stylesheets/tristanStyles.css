@@ -121,3 +121,43 @@ h1 {
     justify-content: space-around;
     gap: 20px;
 }
+
+.skills-carousel {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 150%; /* or set a specific width */
+}
+
+.carousel-slide {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    width: 100%;
+}
+
+.carousel-slide img {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.carousel-slide:hover {
+    animation-play-state: paused;
+}
