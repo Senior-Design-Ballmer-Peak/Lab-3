@@ -1,2 +1,130 @@
-<h1>Miles#index</h1>
-<p>Find me in app/views/miles/index.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= "Miles' Portfolio - Ballmer Peak Portfolio" %></title>
+  <%= stylesheet_link_tag 'milesStyles', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<header>
+  <h1>Miles' Portfolio</h1>
+  <nav>
+    <ul>
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'Login', 'auth/login.html' %></li>
+      <li><%= link_to 'Sign Up', 'auth/register.html' %></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="introduction">
+    <h2>About Me</h2>
+    <!--    #<%#= image_tag 'milesImages/img_4.png', alt: 'Miles in Seattle', class: 'feature-image small-image' %>-->
+    <p> Greetings, I am Miles Cook Menster, a dedicated and driven 21-year-old senior at the University of Iowa,
+      pursuing a degree in Electrical Engineering with a focus on computer systems.
+      Hailing from the small town of Bloomfield, Iowa, I am poised to graduate in May 2024, equipped with a passion
+      for leveraging electrical and computer engineering to make a positive impact on society. </p>
+  </section>
+
+  <!--  Section template-->
+  <section class="SECTION">
+    <h2>Academic Pursuits</h2>
+    <!--    #<%#= image_tag 'milesImages/img_3.png', alt: '"The Moth" project for embedded systems', class: 'feature-image small-image' %>-->
+    <p> My academic journey has been centered around the convergence of electrical engineering and computer science.
+      I am enthusiastic about delving into the intricacies of these fields, driven by a desire to contribute meaningfully to
+      technological advancements. As a graduating senior, I aspire to channel my expertise towards enhancing sustainability
+      and minimizing our environmental footprint. In the accompanied image, you can see my final project for embedded systems. It
+      was a mobile system called "The Moth" which used photo resistors to seek out the brightest point in a room. It would then utilize an embedded C
+      program to move towards the highest concentration of light. It also utilized an ultrasonic sensor and dual servo motors to move. One of the coolest
+      projects I have had to opportunity to work on -- especially fulfilling to see the final result.</p>
+  </section>
+
+  <!--  Section template-->
+  <section class="SECTION">
+    <h2>Values and Skills</h2>
+    <!--    #<%#= image_tag 'milesImages/img_1.png', alt: 'Miles at his 7th Birthday', class: 'feature-image small-image' %>-->
+    <p> I am a firm believer in the value of hard work and collaboration. My dedication to personal and professional
+      growth is complemented by a strong work ethic, effective communication skills, and a collaborative mindset.
+      I am adept at navigating the intersection of programming and electronics, and I approach challenges with an
+      open mind, always eager to learn and adapt. Ever since I was a kid I had a passion for working towards my goals (and apple fritters of course). </p>
+  </section>
+
+  <!--  Section template-->
+  <section class="SECTION">
+    <h2>Work Experience</h2>
+    <!--    #<%#= image_tag 'milesImages/img_5.png', alt: 'Miles in front of Arconic factory', class: 'feature-image small-image' %>-->
+    <p> As an Electrical Engineering Intern at Arconic, I collaborated with a diverse team to troubleshoot production lines
+      and contribute to projects, gaining hands-on experience in advanced skills like 5000-level PLC programming and HMI configuration.
+      This internship provided a deep understanding of the industry and emphasized effective teamwork. My Summer Member role at
+      Green Iowa AmeriCorps further honed my collaborative skills in community-focused initiatives. Additionally, working as a
+      summer custodian at the University of Iowa enhanced my adaptability and interpersonal skills within a diverse work environment.
+      These experiences collectively strengthened my technical prowess while emphasizing the significance of teamwork, community engagement,
+      and adaptability in professional settings. </p>
+  </section>
+
+  <!--  Section template-->
+  <section class="SECTION">
+    <h2>Personal Interests</h2>
+    <!--    #<%#= image_tag 'milesImages/img_2.png', alt: 'Miles with brothers, wife, and dogs', class: 'feature-image small-image' %>-->
+    <p> Beyond my academic and professional pursuits, I am deeply rooted in family values. I recently celebrated my
+      marriage in October and cherish the time spent with my two brothers, wife, and dogs. My interests extend beyond the
+      realm of technology, as I find joy in travel, gaming, anime, outdoor activities, and maintaining an active lifestyle.
+
+    <p> In summary, I am an aspiring electrical engineer with a robust academic background, a passion for sustainability,
+      and a commitment to personal and professional growth. I am eager to contribute my skills and enthusiasm to a dynamic
+      work environment and am confident in my ability to make meaningful contributions to any team. </p>
+  </section>
+
+  <section class="skills-carousel">
+    <h2>Skills & Technologies</h2>
+    <p>SQL Database Management
+      C and C++ Programming Language
+      5000 Level PLC Programming
+      FactoryTalk View
+      Electrical Wiring
+      OSIsoft PI
+      Work Package Management
+      Pricing Quotes
+      Assembly Language
+      Field-Programmable Gate Arrays (FPGA)
+      Verilog
+      Python
+      Java
+      Micro-Cap Spice
+      Power Electronics
+      Embedded Systems Applications
+      AutoCAD
+      Driven Worker</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to me for any inquiries or collaborations. I'm always open to discuss new opportunities and projects!</p>
+    <p>Email: <a href="mailto:memenster@gmail.com">memenster@gmail.com</a></p>
+    <p>Phone: 641-208-7504</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/miles-menster-804894205/" target="_blank">Miles Menster</a></p>
+  </section>
+
+  <!-- Comment Section -->
+  <section class="comments" id="comments">
+    <h2>Comments</h2>
+    <ul id="commentList">
+      <!-- Comments will be appended here -->
+    </ul>
+    <div class="comment-form">
+      <h3>Leave a comment:</h3>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="comment">Comment:</label><br>
+      <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+      <button onclick="submitComment()">Submit</button>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>© <%= Time.now.year %> Ballmer Peak Portfolio</p>
+</footer>
+</body>
+</html>
