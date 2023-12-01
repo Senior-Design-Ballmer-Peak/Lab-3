@@ -20,7 +20,9 @@
       <%= user_signed_in? ? link_to("Miles", miles_index_path) : content_tag(:span, "Miles") %>
     </div>
   </div>
-  <button onclick="toggleTheme()">Toggle Theme</button>
+  <div class="toogleButton">
+    <button onclick="toggleTheme()">Toggle Theme</button>
+  </div>
   <nav class="auth-nav">
     <ul>
       <% if user_signed_in? %>
@@ -40,7 +42,7 @@
 </header>
 <main>
   <section class="intro">
-    <p>Welcome to the Ballmer Peak Portfolio! Login or Signup to get et to know our amazing team members below:</p>
+    <p>Welcome to the Ballmer Peak Portfolio! Login or Signup to get to know our amazing team members below:</p>
   </section>
   <section class="team-members">
     <h2>Meet the Team</h2>

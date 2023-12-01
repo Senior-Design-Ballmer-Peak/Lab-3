@@ -215,6 +215,17 @@ header {
     width: 100%; /* Take up full width of parent */
 }
 
+.toogleButton{
+    background-color: #0624cd;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center; /* Center text */
+    width: 100%; /* Take up full width of parent */
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
