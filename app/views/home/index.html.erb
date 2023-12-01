@@ -113,16 +113,14 @@
   <div id="team-map" style="height: 400px;"></div>
 
   <section class="comments" id="comments">
-    <div class="comments-container">
-      <% if user_signed_in? %>
-        <div id="team-map" style="height: 400px;"></div>
-        <h2>Comments</h2>
-        <%= render 'comments/comment_list', comments: Comment.where(page: 'home').order(created_at: :desc).limit(10) %>
-        <div class="comment-form" id="commentForm">
-          <%= render 'comments/form', comment: Comment.new %>
-        </div>
-      <% end %>
-    </div>
+    <% if user_signed_in? %>
+      <div id="team-map" style="height: 400px;"></div>
+      <h2>Comments</h2>
+      <%= render 'comments/comment_list', comments: Comment.where(page: 'home').order(created_at: :desc).limit(10) %>
+      <div class="comment-form" id="commentForm">
+        <%= render 'comments/form', comment: Comment.new %>
+      </div>
+    <% end %>
   </section>
 </main>
 
