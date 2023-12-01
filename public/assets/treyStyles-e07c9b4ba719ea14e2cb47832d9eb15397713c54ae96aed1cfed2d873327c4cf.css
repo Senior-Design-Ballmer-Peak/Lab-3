@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.feature-image {
+    max-width: 75%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    font-weight: 700;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.introduction, .udemy, .internship, .surplus, .comments, .projects, .basketball, .outdoor, .contact {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.skills-carousel {
+    text-align: center;
+}
+
+.carousel {
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-container {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.carousel-slide {
+    flex: 0 0 50%;
+}
+
+.carousel-slide img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+.contact a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
