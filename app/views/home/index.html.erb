@@ -20,6 +20,7 @@
       <%= user_signed_in? ? link_to("Miles", miles_index_path) : content_tag(:span, "Miles") %>
     </div>
   </div>
+  <button onclick="toggleTheme()">Toggle Theme</button>
   <nav class="auth-nav">
     <ul>
       <li><a href="#comments">Comment</a></li>
@@ -133,6 +134,20 @@
         <% end %>
         <% end %>
     });
+
+    function toggleTheme() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+
+        localStorage.setItem('theme', newTheme);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedTheme = localStorage.getItem('theme') || 'light'; // Default to light theme
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    });
+
 </script>
 
 <footer>
