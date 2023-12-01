@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= "Charlie's Portfolio - Ballmer Peak Portfolio" %></title>
   <%= stylesheet_link_tag 'charlieStyles', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.9.0/viewer.min.js"></script>
 </head>
 <body>
 <header style="background-image: url('<%= asset_path("charliesImages/outerSpace.webp") %>'); background-size: cover; background-position: center; background-repeat: no-repeat;">
@@ -92,6 +93,7 @@
     <div class="project">
       <h3>Optimizing Model Selection in Low Variability Datasets with Imbalanced Dependent Variables</h3>
       <p>Using different ML models to predict results with low variability datasets</p>
+      <iframe src='<%= "#{request.base_url}/pdfs/AIMLpaper.pdf" %>' width="100%" height="600px" allowfullscreen webkitallowfullscreen></iframe>
     </div>
     <div class="project">
       <h3>Environmental Sensor</h3>
@@ -153,6 +155,14 @@
     <% end %>
   </section>
 </main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var options = {}; // You can customize the options if needed
+        var viewer = new Viewer(document.body, options);
+    });
+</script>
+
 <footer>
   <p>© <%= Time.now.year %> Ballmer Peak Portfolio</p>
 </footer>
