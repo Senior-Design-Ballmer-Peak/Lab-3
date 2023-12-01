@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= "Trey's Portfolio - Ballmer Peak Portfolio" %></title>
   <%= stylesheet_link_tag 'treyStyles', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.9.0/viewer.min.js"></script>
 </head>
 <body>
 <header style="background-image: url('<%= asset_path("treysImages/rockies.jpeg") %>'); background-size: cover; background-position: center; background-repeat: no-repeat;">
@@ -16,34 +19,41 @@
     </ul>
   </nav>
 </header>
-<main>
+
+<main style="width: 100%; max-width: 800px; box-sizing: border-box; margin: 0 auto; text-align: center;">
   <section class="introduction">
     <h2>About Me</h2>
-    <p> INTRODUCTION </p>
+    <p> I am a student at the University of Iowa, studying Computer
+      Science and Engineering. Mobile development and backend software
+      are my two largest areas of interest. I am technology driven and
+      love to learn new languages, frameworks, and more. In my free time
+      I enjoy disc golfing, basketball, hiking, building custom mechanical
+      keyboards, 3D printing, cooking, and much more. </p>
   </section>
-
 
   <section class="iowa">
-    <p><%= image_tag 'treysImages/young-hawkeye.jpeg', alt: 'Young Trey at Iowa basketball game', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/hurkey.jpeg', alt: 'Trey next to Hurkey', class: 'feature-image' %></p>
+    <div><%= image_tag 'treysImages/young-hawkeye.jpeg', alt: 'Young Trey at Iowa basketball game', class: 'feature-image' %></div>
+    <div><%= image_tag 'treysImages/hurkey.jpeg', alt: 'Trey next to Hurkey', class: 'feature-image' %></div>
     <h2>University of Iowa</h2>
-    <p> Section Description </p>
-  </section>
-
-  <section class="udemy">
-    <h2>Online Classes</h2>
-
-    <p> Section Description </p>
+    <p> Computer Science and Engineering </p>
+    <p> Expected Graduation: May 2024 </p>
   </section>
 
   <section class="internship">
-    <h2>AI/ML Internship</h2>
-    <p> Section Description </p>
+    <h2> AI/ML Internship </h2>
+    <p> MoodMe Tech </p>
+    <p> Swift / Objective C / XCode </p>
+    <p> In this position I work with the demo app that was used for showcasing
+      the company’s artificial intelligence product. The AI itself was used to
+      detect emotional state in people. </p>
   </section>
 
   <section class="surplus">
-    <h2>Laptop/PC technician</h2>
-    <p> Section Description </p>
+    <h2> Laptop/PC Technician </h2>
+    <p> University of Iowa Surplus </p>
+    <p> Hardware Problem Solving / Hard Drive and SSD Wiping </p>
+    <p> Disassemble / Fix / Reassemble </p>
+    <p> Laptops / Tower PC / Projectors / All-In-One Systems </p>
   </section>
 
   <section class="projects">
@@ -51,17 +61,39 @@
     <div class="project">
       <h3>CookSmart</h3>
       <p><%= image_tag 'treysImages/CookSmart.png', alt: 'iPhone App Icon', class: 'feature-image' %></p>
-      <p>iPhone App</p>
+      <p>CookSmart is my personal iOS mobile project that I have developed to
+        help people with some of the parts of cooking I have found to be the
+        more tedious. That being keeping your recipes handy, helping plan a
+        week of meals, aid in creating a shopping list for a week’s meal plan,
+        and helping scale those recipes whether cooking for 1 person or larger
+        groups. The end goal is to also add Apple Watch integration and built in
+        recipe timers, along with iPad support to allow users to see recipes on
+        a larger screen, and to deploy the app in the next year. I feel it has
+        given me a well-rounded first experience in the full stack of mobile
+        development.</p>
     </div>
     <div class="project">
       <h3>Optimizing Model Selection in Low Variability Datasets with Imbalanced Dependent Variables</h3>
       <p>Using different ML models to predict results with low variability datasets</p>
+      <iframe src='<%= "#{request.base_url}/pdfs/AIMLpaper.pdf" %>' width="100%" height="600px" allowfullscreen webkitallowfullscreen></iframe>
     </div>
     <div class="project">
-      <h3>Embedded Systems Project</h3>
-      <p>Remote Controlled Crane</p>
+      <h3> Remote Controlled Crane Embedded Systems Project </h3>
+      <p> <%= image_tag 'treysImages/crane.png', alt: 'RC Crane', class: 'feature-image' %></p>
+      <p> For an embedded systems class, my partner and I developed a remote control
+        crane from the ground up using C on an Arduino Uno, along with multiple physical
+        components that came with our lab kit such as motors, ir receivers, ir transmitters,
+        and a remote. The body of the crane was designed from scratch using Autodesk Fusion 360
+        and printed on my Ender 3v2 Neo. </p>
     </div>
   </section>
+
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var options = {}; // You can customize the options if needed
+          var viewer = new Viewer(document.body, options);
+      });
+  </script>
 
   <section class="skills-carousel">
     <h2>Skills & Technologies</h2>
@@ -107,36 +139,43 @@
   </section>
 
   <section class="basketball">
+    <h2>Basketball</h2>
     <p><%= image_tag 'treysImages/basketball.jpeg', alt: 'Trey playing basketball in high school', class: 'feature-image' %></p>
     <p><%= image_tag 'treysImages/bulls.jpeg', alt: 'Bulls Game', class: 'feature-image' %></p>
-    <h2>Basketball</h2>
-    <p> Section Description </p>
   </section>
 
   <section class="outdoor">
     <h2>Outdoors</h2>
-    <p><%= image_tag 'treysImages/black-elk-peak.jpeg', alt: 'Photo from atop Black Elk Peak in South Dakota', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/camelback.jpeg', alt: 'Looking down on the hike up camelback in Phoenix, Arizona', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/devils-lake.jpeg', alt: 'A nice view of Devil\'s Lake state park in Wisconsin', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/mount-garfield.jpeg', alt: 'The view from Trey\'s favorite hike, up Mount Garfield in Grand Junction, Colorado', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/starved-rock.jpeg', alt: 'One of the canyons that live in Starved Rock State Park, Illinois', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/rockies.jpeg', alt: 'A beautiful view of the Rocky Mountain Range in Colorado', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/disc-golf.jpeg', alt: 'A photo at Brookwood Disc Golf Course in Waverly, Iowa', class: 'feature-image' %></p>
-    <p><%= image_tag 'treysImages/ace.jpeg', alt: 'A photo of Trey\'s first ace, during a glow round at his home course', class: 'feature-image' %></p>
-    <p> Section Description </p>
+    <div class="carousel" id="outdoor-carousel">
+      <div><%= image_tag 'treysImages/black-elk-peak.jpeg', alt: 'Photo from atop Black Elk Peak in South Dakota', class: 'feature-image' %></div>
+      <div><%= image_tag 'treysImages/camelback.jpeg', alt: 'Looking down on the hike up camelback in Phoenix, Arizona', class: 'feature-image' %></div>
+      <div><%= image_tag 'treysImages/devils-lake.jpeg', alt: 'A nice view of Devil\'s Lake state park in Wisconsin', class: 'feature-image' %></div>
+      <div><%= image_tag 'treysImages/mount-garfield.jpeg', alt: 'The view from Trey\'s favorite hike, up Mount Garfield in Grand Junction, Colorado', class: 'feature-image' %></div>
+      <div><%= image_tag 'treysImages/starved-rock.jpeg', alt: 'One of the canyons that live in Starved Rock State Park, Illinois', class: 'feature-image' %></div>
+      <div><%= image_tag 'treysImages/rockies.jpeg', alt: 'A beautiful view of the Rocky Mountain Range in Colorado', class: 'feature-image' %></div>
+      <div><%= image_tag 'treysImages/disc-golf.jpeg', alt: 'A photo at Brookwood Disc Golf Course in Waverly, Iowa', class: 'feature-image' %></div>
+      <div><%= image_tag 'treysImages/ace.jpeg', alt: 'A photo of Trey\'s first ace, during a glow round at his home course', class: 'feature-image' %></div>
+    </div>
   </section>
 
-  <section class="3d-printing">
-    <h2>3D Printing</h2>
-    <!--    #<%#= image_tag 'charliesImages/bannerPhoto.jpeg', alt: 'Charlie in the Downtown Banner Campaign', class: 'feature-image small-image' %>-->
-    <p> Section Description </p>
-  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-  <section class="keyboards">
-    <h2>Custom Keyboards</h2>
-    <!--    #<%#= image_tag 'charliesImages/bannerPhoto.jpeg', alt: 'Charlie in the Downtown Banner Campaign', class: 'feature-image small-image' %>-->
-    <p> Section Description </p>
-  </section>
+  <script>
+      $(document).ready(function(){
+          $('#outdoor-carousel').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2000,
+              dots: true,
+              infinite: true,
+              speed: 500,
+              fade: true,
+              cssEase: 'linear'
+          });
+      });
+  </script>
 
   <section class="contact">
     <h2>Contact Me</h2>
@@ -146,7 +185,6 @@
     <p>LinkedIn: <a href="https://www.linkedin.com/in/trey-eckenrod" target="_blank">trey-eckenrod</a></p>
     <p>GitHub: <a href="https://github.com/teckenrod" target="_blank">teckenrod</a></p>
   </section>
-
 
   <section class="comments" id="comments">
     <% if user_signed_in? %>
