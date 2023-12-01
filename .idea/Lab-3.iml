@@ -1630,6 +1630,7 @@
         </excluded>
       </library>
     </orderEntry>
+    <orderEntry type="library" name="slick-carousel" level="application" />
   </component>
   <component name="RakeTasksCache">
     <option name="myRootTask">
