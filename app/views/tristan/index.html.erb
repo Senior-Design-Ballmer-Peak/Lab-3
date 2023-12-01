@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= "Tristan's Portfolio - Ballmer Peak Portfolio" %></title>
   <%= stylesheet_link_tag 'tristanStyles', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.9.0/viewer.min.js"></script>
 </head>
 <body>
 <header>
@@ -13,8 +14,6 @@
   <nav>
     <ul>
       <li><%= link_to 'Home', root_path %></li>
-      <li><%= link_to 'Login', 'auth/login.html' %></li>
-      <li><%= link_to 'Sign Up', 'auth/register.html' %></li>
     </ul>
   </nav>
 </header>
@@ -56,6 +55,54 @@
     <p class="limited-width">My hobbies include spending time outside either hiking or skiing, and exploring the world of additive manufacturing with my 3D printer.</p>
   </section>
 
+  <section class="skills-carousel">
+    <h2>Skills & Technologies</h2>
+    <div class="carousel">
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <%= image_tag 'icons/c.png', alt: 'C' %>
+          <%= image_tag 'icons/cpp.png', alt: 'C++' %>
+          <%= image_tag 'icons/csharp.png', alt: 'C#' %>
+          <%= image_tag 'icons/dotnet.png', alt: '.Net' %>
+          <%= image_tag 'icons/java.png', alt: 'Java' %>
+          <%= image_tag 'icons/python.png', alt: 'Python' %>
+          <%= image_tag 'icons/ruby.png', alt: 'Ruby' %>
+          <%= image_tag 'icons/ruby-on-rails.png', alt: 'Ruby on Rails' %>
+          <%= image_tag 'icons/angular.png', alt: 'Angular' %>
+          <%= image_tag 'icons/html.png', alt: 'HTML' %>
+          <%= image_tag 'icons/css.png', alt: 'CSS' %>
+          <%= image_tag 'icons/typescript.png', alt: 'Typescript' %>
+          <%= image_tag 'icons/haskell.png', alt: 'Haskell' %>
+          <%= image_tag 'icons/assembly.png', alt: 'Assembly' %>
+          <%= image_tag 'icons/matlab.png', alt: 'MatLab' %>
+          <%= image_tag 'icons/mongodb.png', alt: 'MongoDB' %>
+          <%= image_tag 'icons/postgres.png', alt: 'Postgres' %>
+          <%= image_tag 'icons/neo4j.png', alt: 'Neo4J' %>
+          <%= image_tag 'icons/redis.png', alt: 'Redis' %>
+          <%= image_tag 'icons/bash.png', alt: 'Bash' %>
+          <%= image_tag 'icons/ubuntu.png', alt: 'Ubuntu' %>
+          <%= image_tag 'icons/jetbrains.png', alt: 'Jetbrains' %>
+          <%= image_tag 'icons/vscode.png', alt: 'VS Code' %>
+          <%= image_tag 'icons/git.png', alt: 'Git' %>
+          <%= image_tag 'icons/PlatformIO.png', alt: 'PlatforIO' %>
+          <%= image_tag 'icons/arduino.png', alt: 'Arduino' %>
+          <%= image_tag 'icons/jira.png', alt: 'Jira' %>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="resume">
+    <h2>Resume</h2>
+    <iframe src='<%= "#{request.base_url}/pdfs/firmware resume 2023.pdf" %>' width="100%" height="600px" allowfullscreen webkitallowfullscreen></iframe>
+  </section>
+
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var options = {}; // You can customize the options if needed
+          var viewer = new Viewer(document.body, options);
+      });
+  </script>
 
   <section class="comments" id="comments">
     <% if user_signed_in? %>
