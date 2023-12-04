@@ -18,6 +18,7 @@
     <orderEntry type="jdk" jdkName="RVM: ruby-3.2.2" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="viewerjs" level="application" />
+    <orderEntry type="library" name="slick-carousel" level="application" />
     <orderEntry type="module-library">
       <library name="actioncable (v7.1.2) [path][gem]" type="rubylib">
         <properties>
@@ -1630,7 +1631,6 @@
         </excluded>
       </library>
     </orderEntry>
-    <orderEntry type="library" name="slick-carousel" level="application" />
   </component>
   <component name="RakeTasksCache">
     <option name="myRootTask">

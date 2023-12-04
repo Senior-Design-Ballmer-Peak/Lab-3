@@ -20,10 +20,13 @@
       <%= user_signed_in? ? link_to("Miles", miles_index_path) : content_tag(:span, "Miles") %>
     </div>
   </div>
+  <div class="toogleButton">
+    <button onclick="toggleTheme()">Toggle Theme</button>
+  </div>
   <nav class="auth-nav">
     <ul>
-      <li><a href="#comments">Comment</a></li>
       <% if user_signed_in? %>
+        <li><a href="#comments">Comment</a></li>
         <%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete } %>
       <% else %>
         <li><%= link_to "Sign Up", "/users/sign_up" %></li>
@@ -39,7 +42,7 @@
 </header>
 <main>
   <section class="intro">
-    <p>Welcome to the Ballmer Peak Portfolio! Get to know our amazing team members below:</p>
+    <p>Welcome to the Ballmer Peak Portfolio! Login or Signup to get to know our amazing team members below:</p>
   </section>
   <section class="team-members">
     <h2>Meet the Team</h2>
@@ -104,6 +107,9 @@
     </div>
   </section>
 
+  <div class="lab">
+    <h2>Team member hometowns</h2>
+  </div>
   <div id="team-map" style="height: 400px;"></div>
 
   <section class="comments" id="comments">
@@ -133,6 +139,20 @@
         <% end %>
         <% end %>
     });
+
+    function toggleTheme() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+
+        localStorage.setItem('theme', newTheme);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedTheme = localStorage.getItem('theme') || 'light'; // Default to light theme
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    });
+
 </script>
 
 <footer>
